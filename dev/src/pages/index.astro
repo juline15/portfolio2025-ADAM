@@ -32,8 +32,8 @@ import Layout from "../layouts/Layout.astro";
 			class="container mx-auto px-8 py-20 flex justify-between items-center"
 		>
 			<div class="max-w-xl">
-				<h1 class="text-6xl font-bold mb-4">
-					<span class="italic text-4xl">Je</span><br />
+				<p class="">Je</p>
+				<h1 class="h1">
 					Juline<br />
 					ADAM
 				</h1>
@@ -58,55 +58,49 @@ import Layout from "../layouts/Layout.astro";
 
 			<!-- Avatar -->
 			<div class="relative">
-				<div
-					class="absolute top-10 right-20 w-20 h-12 bg-white rounded-full opacity-90"
-				>
-				</div>
-				<div
-					class="absolute top-20 right-40 w-16 h-10 bg-white rounded-full opacity-80"
-				>
-				</div>
-				<div
-					class="absolute top-32 right-10 w-24 h-14 bg-white rounded-full opacity-85"
-				>
-				</div>
-				<div
-					class="w-48 h-48 bg-gradient-to-br from-pink-300 to-orange-200 rounded-full flex items-center justify-center text-6xl"
-				>
-					👨🏽
-				</div>
+				<img
+					src="/images/avatar.svg"
+					alt="Avatar Juline ADAM"
+					class=""
+				/>
 			</div>
 		</section>
 
 		<!-- Skills Marquee -->
 		<div class="bg-black/30 backdrop-blur py-4 overflow-hidden">
 			<div class="flex gap-8 animate-marquee whitespace-nowrap">
-				<span class="flex items-center gap-2">Visual Design ✦</span>
-				<span class="flex items-center gap-2">Rapid Prototyping ✦</span>
-				<span class="flex items-center gap-2">User Testing ✦</span>
-				<span class="flex items-center gap-2">Design Systems ✦</span>
-				<span class="flex items-center gap-2">Graphic Design ✦</span>
-				<span class="flex items-center gap-2">Visual Design ✦</span>
-				<span class="flex items-center gap-2">Rapid Prototyping ✦</span>
+				<span class="flex items-center gap-2">Veille ✦</span>
+				<span class="flex items-center gap-2">Prototypage ✦</span>
+				<span class="flex items-center gap-2">Tests Utilisateurs ✦</span
+				>
+				<span class="flex items-center gap-2">Charte graphique ✦</span>
+				<span class="flex items-center gap-2">Design Graphique ✦</span>
+				<span class="flex items-center gap-2">Montage vidéo ✦</span>
+				<span class="flex items-center gap-2">Maquette (UX/UI) ✦</span>
+				<span class="flex items-center gap-2">Communication ✦</span>
+				<span class="flex items-center gap-2"
+					>Gestion de contenus ✦</span
+				>
+				<span class="flex items-center gap-2">Identité visuelle ✦</span>
+				<span class="flex items-center gap-2">Captation vidéo✦</span>
+				<span class="flex items-center gap-2">Branding ✦</span>
 			</div>
 		</div>
 
 		<!-- Projects Section -->
 		<section id="projets" class="container mx-auto px-8 py-20">
-			<h2 class="text-4xl font-bold mb-12 underline underline-offset-8">
-				Projets
-			</h2>
+			<h2 class="h2 mb-12 underline underline-offset-8">Projets</h2>
 
-			<!-- BDE MMI Project -->
+			<!-- BDE MMI Project - Titre/Image à GAUCHE, Texte à DROITE -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
 				<div>
-					<h3 class="text-2xl font-bold mb-4">BDE MMI</h3>
+					<h3 class="h3 mb-4">BDE MMI</h3>
 					<img
-						src="/images/bde-mmi.jpg"
+						src="/src/assets/img/card1.webp"
 						alt="BDE MMI"
-						class="w-40 h-40 rounded-2xl object-cover mb-6"
+						class="w-auto h-50 rounded-2xl object-cover mb-6"
 					/>
 				</div>
 				<div class="max-w-md">
@@ -118,32 +112,31 @@ import Layout from "../layouts/Layout.astro";
 					</p>
 					<div class="flex flex-wrap gap-3 mb-4">
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>RÉDACTION</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>ÉVÉNEMENTIEL</span
 						>
 					</div>
 					<button
-						class="bg-purple-400 hover:bg-purple-500 px-6 py-2 rounded-full transition"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition"
 					>
 						EN SAVOIR PLUS
 					</button>
 				</div>
 			</div>
 
-			<!-- 2BeBetter Project -->
+			<!-- 2BeBetter Project - Texte à GAUCHE, Titre/Images à DROITE -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
 				<div class="max-w-md">
-					<h3 class="text-3xl font-bold mb-4">2BeBetter</h3>
 					<p class="mb-6">
 						2BeBetter, une plateforme d'entraide solidaire et
 						sécurisée pour les personnes victimes de harcèlement
@@ -151,54 +144,50 @@ import Layout from "../layouts/Layout.astro";
 					</p>
 					<div class="flex flex-wrap gap-3 mb-4">
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>COMMUNICATION</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>UX</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>UI</span
 						>
 					</div>
 					<button
-						class="bg-purple-400 hover:bg-purple-500 px-6 py-2 rounded-full transition"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition"
 					>
 						EN SAVOIR PLUS
 					</button>
 				</div>
-				<div class="flex gap-4">
-					<img
-						src="/images/2bebetter-1.jpg"
-						alt="2BeBetter"
-						class="w-32 h-64 rounded-3xl object-cover"
-					/>
-					<img
-						src="/images/2bebetter-2.jpg"
-						alt="2BeBetter"
-						class="w-32 h-64 rounded-3xl object-cover"
-					/>
+				<div class="flex flex-col items-end">
+					<h3 class="h3 mb-4">2BeBetter</h3>
+					<div class="flex gap-4">
+						<img
+							src="/src/assets/img/card2.webp"
+							alt="2BeBetter"
+							class="w-auto h-50 rounded-3xl object-cover"
+						/>
+					</div>
 				</div>
 			</div>
 
-			<!-- Festival L'Âge de Bière -->
+			<!-- Festival L'Âge de Bière - Titre/Image à GAUCHE, Texte à DROITE -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
 				<div>
-					<h3 class="text-2xl font-bold mb-4">
-						Festival L'Âge de Bière
-					</h3>
+					<h3 class="h3 mb-4">Festival L'Âge de Bière</h3>
 					<img
-						src="/images/festival-biere.jpg"
+						src="/src/assets/img/card3.webp"
 						alt="Festival"
-						class="w-48 h-32 rounded-2xl object-cover mb-4"
+						class="w-auto h-50 rounded-2xl object-cover mb-4"
 					/>
 				</div>
 				<div class="max-w-md">
@@ -210,32 +199,31 @@ import Layout from "../layouts/Layout.astro";
 					</p>
 					<div class="flex flex-wrap gap-3 mb-4">
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>VIDÉO</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>MONTAGE</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>CAPTATION</span
 						>
 					</div>
 					<button
-						class="bg-purple-400 hover:bg-purple-500 px-6 py-2 rounded-full transition"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition"
 					>
 						EN SAVOIR PLUS
 					</button>
 				</div>
 			</div>
 
-			<!-- MODULO Project -->
+			<!-- MODULO Project - Texte à GAUCHE, Titre/Image à DROITE -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 flex justify-between items-center"
 			>
 				<div class="max-w-md">
-					<h3 class="text-3xl font-bold mb-4">MODULO</h3>
 					<p class="mb-6">
 						2BeBetter, une plateforme d'entraide solidaire et
 						sécurisée pour les personnes victimes de harcèlement
@@ -243,29 +231,32 @@ import Layout from "../layouts/Layout.astro";
 					</p>
 					<div class="flex flex-wrap gap-3 mb-4">
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>ANALYSE</span
 						>
 						<span
-							class="border border-white/50 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
 							>BRANDING</span
 						>
 					</div>
 					<button
-						class="bg-purple-400 hover:bg-purple-500 px-6 py-2 rounded-full transition"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition"
 					>
 						EN SAVOIR PLUS
 					</button>
 				</div>
-				<img
-					src="/images/modulo.jpg"
-					alt="Modulo"
-					class="w-48 h-32 rounded-2xl object-cover"
-				/>
+				<div class="flex flex-col items-end">
+					<h3 class="h3 mb-4">MODULO</h3>
+					<img
+						src="/src/assets/img/card4.webp"
+						alt="Modulo"
+						class="w-auto h-50 rounded-2xl object-cover"
+					/>
+				</div>
 			</div>
 		</section>
 
