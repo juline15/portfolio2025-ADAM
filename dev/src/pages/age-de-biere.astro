@@ -1,0 +1,457 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto px-8 pt-40 pb-20">
+            <h1 class="h1 underline mb-8">Festival l'Âge de Bière</h1>
+
+            <!-- Section Introduction -->
+            <div class="mb-16">
+                <h2 class="h2 text-pink-300 mb-6">
+                    L'Âge de Bière, qu'est-ce-que c'est?
+                </h2>
+                <div class="flex gap-12">
+                    <!-- Colonne gauche: texte + 3 photos -->
+                    <div class="flex-1 flex flex-col gap-6">
+                        <p class="text-lg">
+                            L'Âge de Bière, à Lachapelle-sous-Chaux, est un
+                            festival mêlant bière artisanale et rock live. Entre
+                            grands musiciens et animations locales, c'est un
+                            rendez-vous de musique, de partage et de découverte.
+                            Un moment festif où le houblon rencontre les
+                            guitares!
+                        </p>
+
+                        <!-- Galerie photos - 3 photos côte à côte -->
+                        <div class="flex gap-4">
+                            <img
+                                src="/src/assets/img/biere1.webp"
+                                alt="Photo festival 1"
+                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/biere2.webp"
+                                alt="Photo festival 2"
+                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/biere3.webp"
+                                alt="Photo festival 3"
+                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Colonne droite: logo qui prend toute la hauteur -->
+                    <div class="flex-shrink-0">
+                        <img
+                            src="/src/assets/img/logobiere.webp"
+                            alt="Logo Festival Âge de Bière"
+                            class="w-64 h-full object-cover rounded-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section En tant que vidéaste -->
+            <div class="mb-5 pt-10">
+                <h2 class="h2 text-pink-300 mb-8 text-center">
+                    En tant que vidéaste
+                </h2>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/video-square.svg"
+                                    alt=""
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Valorisation de l’événement sur les réseaux et
+                                supports de communication grâce à un contenu
+                                audiovisuel attractif
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/message-2.svg"
+                                    alt=""
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Mise en avant de l’identité du festival à
+                                travers un storytelling visuel impactant
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/video-tick.svg"
+                                    alt=""
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Captation des moments forts du festival pour
+                                mettre en valeur l’ambiance et l’énergie de
+                                l’événement
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/video.svg"
+                                    alt=""
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Réalisation de l’aftermovie, du tournage au
+                                montage, pour offrir une vidéo dynamique et
+                                immersive
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section En réalisant l'aftermovie -->
+        <div class="mb-16 mx-40">
+            <h2 class="h2 text-pink-300 mb-8 text-center">
+                En réalisant l'aftermovie du festival
+            </h2>
+
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Card Captation -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">CAPTATION</h3>
+                    <p class="text-sm">
+                        J’ai appris à filmer dans un environnement live, à
+                        capter l’énergie du public et les moments clés pour
+                        retranscrire l’ambiance unique du festival.
+                    </p>
+                </div>
+
+                <!-- Card Montage -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">MONTAGE</h3>
+                    <p class="text-sm">
+                        J’ai renforcé mes compétences en storytelling visuel en
+                        transformant des heures de rushs en une vidéo rythmée et
+                        immersive.
+                    </p>
+                </div>
+
+                <!-- Card Collaboration -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">COLLABORATION</h3>
+                    <p class="text-sm">
+                        J’ai travaillé en lien avec l’équipe du festival pour
+                        comprendre leurs attentes et créer un contenu qui
+                        reflète au mieux l’identité de l’événement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Aftermovie -->
+        <div class="mb-16 pt-10">
+            <h2 class="h2 text-pink-300 mb-8 text-center">Aftermovie</h2>
+
+            <div
+                class="relative w-full max-w-4xl mx-auto aspect-video bg-black/40 rounded-3xl overflow-hidden"
+            >
+                <img
+                    src="/images/festival-video-thumbnail.jpg"
+                    alt="Miniature vidéo aftermovie"
+                    class="w-full h-full object-cover"
+                />
+            </div>
+        </div>
+
+        <!-- Section Étape par étape - CARROUSEL -->
+        <div class="mb-16 pt-10">
+            <h2 class="h2 text-pink-300 mb-8 text-center">
+                Le Festival L'Âge de Bière, étape par étape
+            </h2>
+
+            <div class="relative max-w-6xl mx-auto">
+                <!-- Carrousel Container -->
+                <div id="carousel" class="overflow-hidden">
+                    <div
+                        id="carousel-track"
+                        class="flex transition-transform duration-500 ease-in-out"
+                    >
+                        <!-- Slide 1 -->
+                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                            >
+                                <img
+                                    src="/images/festival-etape1.jpg"
+                                    alt="Montage de la scène"
+                                    class="w-full h-48 object-cover rounded-xl mb-4"
+                                />
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm">Montage de la scène</p>
+                                    <span
+                                        class="text-pink-300 font-bold text-right"
+                                        >29<br />mai<br />2025</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                            >
+                                <img
+                                    src="/images/festival-etape2.jpg"
+                                    alt="Montage chapiteau"
+                                    class="w-full h-48 object-cover rounded-xl mb-4"
+                                />
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm">
+                                        Montage des chapiteaux pour les espaces
+                                        exposants et restauration
+                                    </p>
+                                    <span
+                                        class="text-pink-300 font-bold text-right"
+                                        >29<br />mai<br />2025</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                            >
+                                <img
+                                    src="/images/festival-etape3.jpg"
+                                    alt="Installation technique"
+                                    class="w-full h-48 object-cover rounded-xl mb-4"
+                                />
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm">
+                                        Installation technique et sonorisation
+                                    </p>
+                                    <span
+                                        class="text-pink-300 font-bold text-right"
+                                        >30<br />mai<br />2025</span
+                                    >
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                            >
+                                <img
+                                    src="/images/festival-etape4.jpg"
+                                    alt="Début du festival"
+                                    class="w-full h-48 object-cover rounded-xl mb-4"
+                                />
+                                <div class="flex justify-between items-center">
+                                    <p class="text-sm">
+                                        Ouverture du festival et premiers
+                                        concerts
+                                    </p>
+                                    <span
+                                        class="text-pink-300 font-bold text-right"
+                                        >31<br />mai<br />2025</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <button
+                    id="prevBtn"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+
+                <button
+                    id="nextBtn"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- Indicateurs -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-pink-300"
+                        data-index="0"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        data-index="1"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Presse -->
+        <div class="mb-30 pt-10 mx-40">
+            <h2 class="h2 text-pink-300 mb-8 text-center">
+                Festival de l'Âge de Bière - Presse
+            </h2>
+
+            <div class="flex gap-12 items-center">
+                <div class="flex-1">
+                    <p class="text-lg mb-6">
+                        Le Pays retrace autour de l'aftermovie du Festival de
+                        l'Âge de Bière le déroulement de la presse locale. Cela
+                        met en valeur mon travail de captation avec la rédaction
+                        d'articles et le montage.
+                    </p>
+                    <a
+                        href="https://www.estrepublicain.fr/societe/2025/09/05/les-artisans-mis-a-l-honneur-durant-l-age-de-biere"
+                        class="bg-indigo-300 text-black hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+                    >
+                        LIRE L'ARTICLE
+                    </a>
+                </div>
+                <div class="flex-shrink-0">
+                    <img
+                        src="/src/assets/img/bierepresse.webp"
+                        alt="Article de presse"
+                        class="w-96 h-auto rounded-xl"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const track = document.getElementById("carousel-track");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dots = document.querySelectorAll(".carousel-dot");
+        const totalSlides = 2;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove("bg-white/30");
+                    dot.classList.add("bg-pink-300");
+                } else {
+                    dot.classList.remove("bg-pink-300");
+                    dot.classList.add("bg-white/30");
+                }
+            });
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        dots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+                currentSlide = parseInt(dot.dataset.index);
+                updateCarousel();
+            });
+        });
+    </script>
+</Layout>
