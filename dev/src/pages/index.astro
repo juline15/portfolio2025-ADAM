@@ -4,32 +4,32 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout>
 	<div class="min-h-screen text-white relative">
-		<!-- Fond avec dégradés radiaux multiples -->
+		<!-- Fond noir pur avec dégradés radiaux plus visibles -->
 		<div class="fixed inset-0 -z-20 bg-black">
 			<div
 				class="absolute inset-0"
 				style="
                 background: 
-                    radial-gradient(circle at 20% 20%, rgba(162, 217, 228, 0.4) 0%, transparent 40%),
-                    radial-gradient(circle at 80% 30%, rgba(106, 130, 230, 0.5) 0%, transparent 40%),
-                    radial-gradient(circle at 50% 60%, rgba(238, 132, 198, 0.3) 0%, transparent 35%),
-                    radial-gradient(circle at 30% 80%, rgba(106, 130, 230, 0.4) 0%, transparent 40%),
-                    radial-gradient(circle at 70% 85%, rgba(162, 217, 228, 0.3) 0%, transparent 35%);
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
             "
 			>
 			</div>
 		</div>
 
-		<!-- Overlay sombre avec blur -->
+		<!-- Overlay sombre léger avec blur -->
 		<div
-			class="fixed inset-0 -z-10 backdrop-blur"
-			style="background-color: rgba(46, 46, 46, 0.70);"
+			class="fixed inset-0 -z-10 backdrop-blur-md"
+			style="background-color: rgba(0, 0, 0, 0.55);"
 		>
 		</div>
 
 		<!-- Hero Section -->
 		<section
-			class="container mx-auto px-8 py-20 flex justify-between items-center"
+			class="container mx-auto px-8 pt-40 py-20 flex justify-between items-center"
 		>
 			<div class="max-w-xl">
 				<p class="">Je</p>
@@ -91,7 +91,7 @@ import Layout from "../layouts/Layout.astro";
 		<section id="projets" class="container mx-auto px-8 py-20">
 			<h2 class="h2 mb-12 underline underline-offset-8">Projets</h2>
 
-			<!-- BDE MMI Project - Titre/Image à GAUCHE, Texte à DROITE -->
+			<!-- BDE MMI Project -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
@@ -132,7 +132,7 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 
-			<!-- 2BeBetter Project - Texte à GAUCHE, Titre/Images à DROITE -->
+			<!-- 2BeBetter Project -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
@@ -178,7 +178,7 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 
-			<!-- Festival L'Âge de Bière - Titre/Image à GAUCHE, Texte à DROITE -->
+			<!-- Festival L'Âge de Bière -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
 			>
@@ -219,7 +219,7 @@ import Layout from "../layouts/Layout.astro";
 				</div>
 			</div>
 
-			<!-- MODULO Project - Texte à GAUCHE, Titre/Image à DROITE -->
+			<!-- MODULO Project -->
 			<div
 				class="bg-white/10 backdrop-blur rounded-3xl p-8 flex justify-between items-center"
 			>

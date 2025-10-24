@@ -3,13 +3,17 @@
 ---
 
 <header
-    class="flex justify-between items-center px-8 py-6 border-b border-white/20"
+    class="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 py-6 border-b border-white/20 bg-black/40 backdrop-blur-md"
     style="box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);"
 >
-    <div
-        class="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center"
-    >
-        <span class="text-xl">✨</span>
+    <div class="flex items-center justify-between h-16">
+        <a href="/">
+            <img
+                src="/src/assets/img/logo_blanc.png"
+                alt="Logo SAE303"
+                class="h-25 w-auto hover:opacity-80 transition"
+            />
+        </a>
     </div>
     <nav class="flex gap-8 items-center">
         <a href="#projets" class="text-white hover:text-purple-300 transition"
@@ -19,7 +23,7 @@
             >À propos</a
         >
         <button
-            class="text-white border-2 border-purple-400 rounded-full px-6 py-2 hover:bg-purple-400 transition"
+            class="text-white border-3 border-pink-300 rounded-full px-6 py-2 hover:bg-pink-400 hover:border-pink-400 transition"
         >
             ME CONTACTER
         </button>
