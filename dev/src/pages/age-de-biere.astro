@@ -226,13 +226,17 @@ import Layout from "../layouts/Layout.astro";
             <h2 class="h2 text-pink-300 mb-8 text-center">Aftermovie</h2>
 
             <div
-                class="relative w-full max-w-4xl mx-auto aspect-video bg-black/40 rounded-3xl overflow-hidden"
+                class="relative w-full max-w-4xl mx-auto aspect-video rounded-3xl overflow-hidden"
             >
-                <img
-                    src="/images/festival-video-thumbnail.jpg"
-                    alt="Miniature vidéo aftermovie"
-                    class="w-full h-full object-cover"
-                />
+                <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/j1AS4bSfw2Y?controls=1&rel=0"
+                    title="Aftermovie Festival L'Âge de Bière"
+                    frameborder="0"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    class="absolute inset-0"></iframe>
             </div>
         </div>
 
@@ -249,85 +253,233 @@ import Layout from "../layouts/Layout.astro";
                         id="carousel-track"
                         class="flex transition-transform duration-500 ease-in-out"
                     >
-                        <!-- Slide 1 -->
+                        <!-- Slide 1 - Cards 1 et 2 -->
                         <div class="min-w-full grid grid-cols-2 gap-8 px-4">
                             <div
-                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
-                                <img
-                                    src="/images/festival-etape1.jpg"
-                                    alt="Montage de la scène"
-                                    class="w-full h-48 object-cover rounded-xl mb-4"
-                                />
-                                <div class="flex justify-between items-center">
-                                    <p class="text-sm">Montage de la scène</p>
-                                    <span
-                                        class="text-pink-300 font-bold text-right"
-                                        >29<br />mai<br />2025</span
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape1.webp"
+                                        alt="Étape 1"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
                                     >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            29<br />mai<br />2025
+                                        </span>
+                                    </div>
                                 </div>
+                                <p class="text-sm">Montage de la scène</p>
                             </div>
 
                             <div
-                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
-                                <img
-                                    src="/images/festival-etape2.jpg"
-                                    alt="Montage chapiteau"
-                                    class="w-full h-48 object-cover rounded-xl mb-4"
-                                />
-                                <div class="flex justify-between items-center">
-                                    <p class="text-sm">
-                                        Montage des chapiteaux pour les espaces
-                                        exposants et restauration
-                                    </p>
-                                    <span
-                                        class="text-pink-300 font-bold text-right"
-                                        >29<br />mai<br />2025</span
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape2.webp"
+                                        alt="Étape 2"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
                                     >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            29<br />mai<br />2025
+                                        </span>
+                                    </div>
                                 </div>
+                                <p class="text-sm">
+                                    Installation des chapiteaux pour les espaces
+                                    exposants et restauration
+                                </p>
                             </div>
                         </div>
 
-                        <!-- Slide 2 -->
+                        <!-- Slide 2 - Cards 3 et 4 -->
                         <div class="min-w-full grid grid-cols-2 gap-8 px-4">
                             <div
-                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
-                                <img
-                                    src="/images/festival-etape3.jpg"
-                                    alt="Installation technique"
-                                    class="w-full h-48 object-cover rounded-xl mb-4"
-                                />
-                                <div class="flex justify-between items-center">
-                                    <p class="text-sm">
-                                        Installation technique et sonorisation
-                                    </p>
-                                    <span
-                                        class="text-pink-300 font-bold text-right"
-                                        >30<br />mai<br />2025</span
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape3.webp"
+                                        alt="Étape 3"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
                                     >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
                                 </div>
+                                <p class="text-sm">
+                                    Préparation technique : sonorisation,
+                                    éclairage et coordination régie
+                                </p>
                             </div>
 
                             <div
-                                class="bg-white/10 backdrop-blur rounded-3xl p-6 overflow-hidden"
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
-                                <img
-                                    src="/images/festival-etape4.jpg"
-                                    alt="Début du festival"
-                                    class="w-full h-48 object-cover rounded-xl mb-4"
-                                />
-                                <div class="flex justify-between items-center">
-                                    <p class="text-sm">
-                                        Ouverture du festival et premiers
-                                        concerts
-                                    </p>
-                                    <span
-                                        class="text-pink-300 font-bold text-right"
-                                        >31<br />mai<br />2025</span
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape4.webp"
+                                        alt="Étape 4"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
                                     >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
                                 </div>
+                                <p class="text-sm">
+                                    Répétitions des groupes sur scène
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 - Cards 5 et 6 -->
+                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
+                            >
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape5.webp"
+                                        alt="Étape 5"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-sm">
+                                    Installation des exposants
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
+                            >
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape7.webp"
+                                        alt="Étape 6"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-sm">
+                                    Arrivée des festivaliers et ouverture des
+                                    stands
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 - Cards 7 et 8 -->
+                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
+                            >
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape8.webp"
+                                        alt="Étape 7"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-sm">
+                                    Concours de dégustation de bière
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
+                            >
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape9.webp"
+                                        alt="Étape 8"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-sm">
+                                    Début des premiers concerts
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 - Cards 9 et 10 -->
+                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
+                            >
+                                <div class="flex gap-4 mb-4">
+                                    <img
+                                        src="/src/assets/img/etape10.webp"
+                                        alt="Étape 9"
+                                        class="h-48 w-auto object-cover rounded-xl my-3 mr-8"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-sm">Fin des concerts</p>
                             </div>
                         </div>
                     </div>
@@ -370,7 +522,7 @@ import Layout from "../layouts/Layout.astro";
                     </svg>
                 </button>
 
-                <!-- Indicateurs -->
+                <!-- Indicateurs (5 dots pour 5 slides) -->
                 <div class="flex justify-center gap-2 mt-8">
                     <button
                         class="carousel-dot w-3 h-3 rounded-full bg-pink-300"
@@ -378,6 +530,15 @@ import Layout from "../layouts/Layout.astro";
                     <button
                         class="carousel-dot w-3 h-3 rounded-full bg-white/30"
                         data-index="1"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        data-index="2"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        data-index="3"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        data-index="4"></button>
                 </div>
             </div>
         </div>
@@ -420,12 +581,11 @@ import Layout from "../layouts/Layout.astro";
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
         const dots = document.querySelectorAll(".carousel-dot");
-        const totalSlides = 2;
+        const totalSlides = 5;
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
 
-            // Update dots
             dots.forEach((dot, index) => {
                 if (index === currentSlide) {
                     dot.classList.remove("bg-white/30");
