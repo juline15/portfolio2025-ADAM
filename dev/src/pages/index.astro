@@ -48,15 +48,17 @@ import Layout from "../layouts/Layout.astro";
 				</p>
 				<div class="flex gap-4">
 					<button
+						id="scrollToProjects"
 						class="bg-white/20 backdrop-blur hover:bg-white/30 px-6 py-3 rounded-lg transition"
 					>
 						Mes projets
 					</button>
-					<button
+					<a
+						href="/contact"
 						class="bg-white/20 backdrop-blur hover:bg-white/30 px-6 py-3 rounded-lg transition"
 					>
 						Me contacter
-					</button>
+				</a>
 				</div>
 			</div>
 
@@ -269,6 +271,7 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 
 		<script>
+			// Animation texte rotatif
 			const words = [
 				"designeuse graphique",
 				"créative",
@@ -290,14 +293,25 @@ import Layout from "../layouts/Layout.astro";
 				}
 			}
 
-			// Démarrer avec le premier mot
 			if (textElement) {
 				textElement.textContent = words[0];
 				textElement.style.transition = "opacity 0.3s ease";
 			}
 
-			// Changer de mot toutes les 2 secondes
 			setInterval(changeWord, 2000);
+
+			// Scroll animation pour le bouton "Mes projets"
+			const scrollButton = document.getElementById("scrollToProjects");
+			const projectsSection = document.getElementById("projets");
+
+			if (scrollButton && projectsSection) {
+				scrollButton.addEventListener("click", () => {
+					projectsSection.scrollIntoView({
+						behavior: "smooth",
+						block: "start",
+					});
+				});
+			}
 		</script>
 
 		<style>

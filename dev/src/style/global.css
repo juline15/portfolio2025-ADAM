@@ -22,7 +22,7 @@
 }
 
 .h2 {
-    @apply text-xl md:text-3xl lg:text-3xl font-semibold text-white;
+    @apply text-xl md:text-3xl lg:text-3xl font-semibold text-pink-300;
     font-family: 'ClashDisplay-Semibold', sans-serif;
 }
 
