@@ -1,0 +1,372 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto px-8 pt-40 pb-20">
+            <h1 class="h1 underline mb-8">Modulo</h1>
+
+            <!-- Section Introduction -->
+            <div class="mb-16">
+                <h2 class="h2 text-pink-300 mb-6">
+                    Modulo, qu'est-ce-que c'est?
+                </h2>
+                <div class="flex gap-12 items-start">
+                    <!-- Colonne gauche: texte + 3 photos -->
+                    <div class="flex-1 flex flex-col gap-6">
+                        <p class="text-lg">
+                            Modulo est une marque de meubles modulables et
+                            écologiques pensée pour s’adapter à tous les espaces
+                            et aux besoins de chacun, elle propose des solutions
+                            d’aménagement pratiques, design et responsables.
+                            Grâce à ses matériaux durables et son approche
+                            respectueuse de l’environnement, Modulo combine
+                            fonctionnalité et engagement écologique.
+                        </p>
+
+                        <!-- Galerie photos - 2 photos côte à côte -->
+                        <div class="flex gap-4">
+                            <img
+                                src="/src/assets/img/2bebetter1.webp"
+                                alt="Photo 2BeBetter 1"
+                                class="flex-1 h-48 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/2bebetter2.webp"
+                                alt="Photo 2BeBetter 2"
+                                class="flex-1 h-48 object-cover rounded-xl"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Colonne droite: logo -->
+                    <div class="flex-shrink-0">
+                        <img
+                            src="/src/assets/img/2bebetterlogo.webp"
+                            alt="Logo 2BeBetter"
+                            class="w-110 h-auto object-contain rounded-xl"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section En tant que vidéaste -->
+            <div class="mb-5">
+                <h2 class="h2 text-pink-300 mb-8 text-center">
+                    En tant que webdesigner
+                </h2>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/mobile.svg"
+                                    alt="icone de téléphone mobile"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Mise en place d’une plateforme fonctionnelle, à
+                                la fois ergonomique et adaptée aux besoins des
+                                utilisateurs
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/profile-2user.svg"
+                                    alt="icone de profil"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Réalisation des visuels et définition de
+                                l’identité graphique du projet
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/messages.svg"
+                                    alt="icone de message"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Collaboration et échanges pour donner vie à une
+                                plateforme
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/designtools.svg"
+                                    alt="icone d'outils de design"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Conception de la maquette du site en mettant
+                                l’accent sur l’accessibilité et la cohérence
+                                visuelle
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section En réalisant l'aftermovie -->
+        <div class="mb-16 mx-20">
+            <h2 class="h2 mb-8 text-center">
+                En créant la plateforme 2BeBetter
+            </h2>
+
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">CONCEPTION</h3>
+                    <p class="text-sm">
+                        J’ai renforcé ma capacité à penser une identité visuelle
+                        cohérente et à concevoir des maquettes centrées sur
+                        l’expérience utilisateur.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">DESIGN</h3>
+                    <p class="text-sm">
+                        J’ai affiné mon sens du graphisme en créant des visuels
+                        impactants, capables de traduire les valeurs et la
+                        mission du projet.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">ORGANISATION</h3>
+                    <p class="text-sm">
+                        J’ai appris à structurer mon travail, à gérer chaque
+                        étape du projet et à gagner en autonomie dans la
+                        réalisation d’un projet complet.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Processus graphique -->
+        <div class="mb-16 pt-10">
+            <h2 class="h2 mb-8 text-center">Processus graphique</h2>
+
+            <div class="flex gap-12 items-center max-w-6xl mx-auto">
+                <!-- Image à gauche -->
+                <div class="flex-1">
+                    <div
+                        class="bg-white/10 rounded-3xl p-8 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/svg/processgraphique.svg"
+                            alt="Processus graphique avec bulles connectées"
+                            class="w-110 h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Textes à droite -->
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <p class="text-lg font-semibold mb-4">
+                            L'identité visuelle reflète pleinement l'univers et
+                            les intentions du projet.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="text-base leading-relaxed">
+                            Chaque élément - typographie, palette de couleur,
+                            logo, graphismes - a été pensé pour créer une
+                            expérience douce, apaisante et engageante. Le logo,
+                            inspiré des ailes d'un papillon en forme de cœur,
+                            incarne l'idée d'un nouvel envol et d'un
+                            accompagnement bienveillant offert par la
+                            plateforme.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Typo et couleurs -->
+        <div class="mb-16 pt-10 mx-20">
+            <h2 class="h2 mb-8 text-center">Typographies et couleurs</h2>
+
+            <div class="flex gap-16 items-center max-w-6xl mx-auto">
+                <!-- Textes à gauche -->
+                <div class="flex-1 space-y-5">
+                    <p class="text-base leading-relaxed">
+                        Les couleurs ont été choisies pour créer une ambiance
+                        douce et apaisante, en accord avec l'objectif du site.
+                        Inspirées du nom « 2BeBetter », elles reflètent calme et
+                        sérénité afin que l'utilisateur se sente en confiance et
+                        engagé lors de sa navigation.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        Pour 2BeBetter, les polices Montserrat et Nunito créent
+                        une identité visuelle harmonieuse, alliant modernité,
+                        clarté et réconfort.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        Montserrat, utilisée pour les titres, combine douceur et
+                        lisibilité, renforçant le sentiment de bienveillance et
+                        de professionnalisme.
+                    </p>
+
+                    <p class="text-base leading-relaxed">
+                        Nunito, choisie pour le corps du texte, apporte fluidité
+                        et confort de lecture, offrant un espace apaisant et
+                        accessible aux utilisateurs, essentiel pour un site
+                        dédié au soutien des personnes victimes de harcèlement.
+                    </p>
+                </div>
+
+                <!-- Image à droite, centrée verticalement -->
+                <div class="flex-1 flex items-center">
+                    <div
+                        class="bg-white/10 rounded-3xl p-6 flex items-center justify-center w-full"
+                    >
+                        <img
+                            src="/src/assets/svg/typocouleurs.svg"
+                            alt="Typographies et palette de couleurs"
+                            class="w-full h-auto max-w-lg"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section maquette -->
+        <div class="mb-16 pt-10 mx-20">
+            <h2 class="h2 mb-8 text-center">Maquette</h2>
+
+            <div
+                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6"
+            >
+                <!-- Image -->
+                <div class="w-full max-w-3xl">
+                    <div
+                        class="bg-white/10 rounded-3xl p-6 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/img/maquette.webp"
+                            alt="Maquette 2BeBetter"
+                            class="w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Texte en dessous -->
+                <p class="text-base leading-relaxed px-30">
+                    La maquette a posé les bases de l’identité visuelle du site.
+                    Elle a permis de traduire les intentions du projet en une
+                    interface claire, fluide et rassurante, pensée pour guider
+                    l’utilisateur avec douceur tout au long de son parcours.
+                </p>
+            </div>
+        </div>
+
+        <!-- Section supports promotionnels -->
+        <div class="mb-30 pt-10 mx-20">
+            <h2 class="h2 mb-8 text-center">Supports promotionnels</h2>
+
+            <div
+                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6"
+            >
+                <!-- Image -->
+                <div class="w-full max-w-3xl">
+                    <div
+                        class="bg-white/10 rounded-3xl p-6 flex items-center justify-center"
+                    >
+                        <img
+                            src="/src/assets/img/supportspromo.webp"
+                            alt="Supports promotionnels 2BeBetter"
+                            class="w-full h-auto"
+                        />
+                    </div>
+                </div>
+
+                <!-- Texte en dessous -->
+                <p class="text-base leading-relaxed px-30">
+                    Les supports promotionnels ont posé les bases de la
+                    communication visuelle du projet. Ils ont permis de
+                    transmettre l’esprit et les valeurs à travers des visuels
+                    attractifs et cohérents, pensés pour capter l’attention et
+                    donner envie de découvrir le site.
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>
