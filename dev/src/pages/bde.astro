@@ -1,0 +1,658 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto px-8 pt-40 pb-20">
+            <h1 class="h1 underline mb-8">BDE</h1>
+
+            <!-- Section Introduction -->
+            <div class="mb-16">
+                <h2 class="h2 mb-6">Le BDE, qu'est-ce-que c'est?</h2>
+                <div class="flex gap-12 items-start">
+                    <!-- Colonne gauche: texte + 3 photos -->
+                    <div class="flex-1 flex flex-col gap-6 mr-40">
+                        <p class="text-lg">
+                            C'est l'équipe qui fait vivre la vie étudiante et
+                            crée des moments inoubliables. Notre mission :
+                            organiser des événements variés - soirées, journées
+                            à thèmes, jeux - pour rassembler les étudiants et
+                            faire en sorte que chacun passe un bon moment.
+                        </p>
+
+                        <!-- Galerie photos - 3 photos côte à côte -->
+                        <div class="flex gap-4">
+                            <img
+                                src="/src/assets/img/bde1.webp"
+                                alt="Photo BDE 1"
+                                class="w-32 h-32 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/bde2.webp"
+                                alt="Photo BDE 2"
+                                class="w-32 h-32 object-cover rounded-xl"
+                            />
+                            <img
+                                src="/src/assets/img/bde3.webp"
+                                alt="Photo BDE 3"
+                                class="w-32 h-32 object-cover rounded-xl"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- Colonne droite: logo -->
+                    <div class="flex-shrink-0">
+                        <img
+                            src="/src/assets/svg/logobde.svg"
+                            alt="Logo BDE"
+                            class="w-64 h-auto object-contain"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section En tant que vidéaste -->
+            <div class="mb-5 pt-10">
+                <h2 class="h2 mb-8 text-center">En tant que content manager</h2>
+
+                <div class="grid grid-cols-2 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/lovely.svg"
+                                    alt="icone de lecture vidéo"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Collaboration avec les autres pôles du BDE pour
+                                coordonner la communication des événements
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/security-user.svg"
+                                    alt="icone de message"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Gestion de la communication visuelle et digitale
+                                de l’association
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/brush-2.svg"
+                                    alt="icone de calendrier"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Conception des affiches, posts et supports
+                                graphiques pour promouvoir les événements
+                                étudiants
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    >
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                            >
+                                <img
+                                    src="/src/assets/svg/note-favorite.svg"
+                                    alt="icone de caméra vidéo"
+                                    class="w-full h-full"
+                                />
+                            </div>
+                            <p class="text-sm">
+                                Planifier et publier les contenus, tout en
+                                veillant à ce qu’ils soient engageants,
+                                attractifs et adaptés à notre public étudiant
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section En gérant les réseaux sociaux du BDE -->
+        <div class="mb-16 mx-20">
+            <h2 class="h2 mb-8 text-center">
+                En gérant les réseaux sociaux du BDE
+            </h2>
+
+            <div class="grid grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">STRATÉGIE</h3>
+                    <p class="text-sm">
+                        J’ai pu allier créativité et stratégie : imaginer des
+                        visuels percutants, écrire des descriptions engageantes
+                        et penser chaque détail pour capter l’attention des
+                        étudiants.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">DESIGN</h3>
+                    <p class="text-sm">
+                        J’ai affiné mon sens du design, j’ai mieux compris les
+                        codes des réseaux sociaux et j’ai pu concevoir des
+                        contenus engageants.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                >
+                    <h3 class="h3 text-center mb-4">COLLABORATION</h3>
+                    <p class="text-sm">
+                        J’ai appris à collaborer avec différentes équipes, à
+                        m’adapter aux besoins des événements et à coordonner la
+                        communication pour que chaque projet soit une réussite
+                        collective.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Carousel BDE 1 -->
+        <div class="mb-16 pt-10">
+            <h2 class="h2 mb-8 text-center">
+                Découvrez les membres du BDE MMI - Post Instagram
+            </h2>
+
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Carrousel Container -->
+                <div id="carousel1" class="overflow-hidden">
+                    <div
+                        id="carousel-track1"
+                        class="flex transition-transform duration-500 ease-in-out"
+                    >
+                        <!-- Slide 1 - Cards 1, 2 et 3 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde1.webp"
+                                    alt="Membre BDE 1"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde2.webp"
+                                    alt="Membre BDE 2"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde3.webp"
+                                    alt="Membre BDE 3"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 - Cards 4, 5 et 6 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde4.webp"
+                                    alt="Membre BDE 4"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde5.webp"
+                                    alt="Membre BDE 5"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde6.webp"
+                                    alt="Membre BDE 6"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 - Cards 7, 8 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde7.webp"
+                                    alt="Membre BDE 7"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/carbde8.webp"
+                                    alt="Membre BDE 8"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <button
+                    id="prevBtn1"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+
+                <button
+                    id="nextBtn1"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- Indicateurs (3 dots pour 3 slides) -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <button
+                        class="carousel-dot1 w-3 h-3 rounded-full bg-pink-300"
+                        data-index="0"></button>
+                    <button
+                        class="carousel-dot1 w-3 h-3 rounded-full bg-white/30"
+                        data-index="1"></button>
+                    <button
+                        class="carousel-dot1 w-3 h-3 rounded-full bg-white/30"
+                        data-index="2"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Carousel BDE 2 -->
+        <div class="mb-16 pt-10">
+            <h2 class="h2 mb-8 text-center">
+                Semaine défis d'intégration - Stories Instagram
+            </h2>
+
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Carrousel Container -->
+                <div id="carousel2" class="overflow-hidden">
+                    <div
+                        id="carousel-track2"
+                        class="flex transition-transform duration-500 ease-in-out"
+                    >
+                        <!-- Slide 1 - Cards 1, 2 et 3 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde1.webp"
+                                    alt="Story BDE 1"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde2.webp"
+                                    alt="Story BDE 2"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde3.webp"
+                                    alt="Story BDE 3"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 - Cards 4, 5 et 6 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde4.webp"
+                                    alt="Story BDE 4"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde5.webp"
+                                    alt="Story BDE 5"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde6.webp"
+                                    alt="Story BDE 6"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 - Cards 7, 8 -->
+                        <div class="min-w-full grid grid-cols-3 gap-6 px-4">
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden"
+                            >
+                                <img
+                                    src="/src/assets/img/car2bde7.webp"
+                                    alt="Story BDE 7"
+                                    class="w-full object-cover rounded-2xl"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boutons de navigation -->
+                <button
+                    id="prevBtn2"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+
+                <button
+                    id="nextBtn2"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                >
+                    <svg
+                        class="w-6 h-6 text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- Indicateurs (3 dots pour 3 slides) -->
+                <div class="flex justify-center gap-2 mt-8">
+                    <button
+                        class="carousel-dot2 w-3 h-3 rounded-full bg-pink-300"
+                        data-index="0"></button>
+                    <button
+                        class="carousel-dot2 w-3 h-3 rounded-full bg-white/30"
+                        data-index="1"></button>
+                    <button
+                        class="carousel-dot2 w-3 h-3 rounded-full bg-white/30"
+                        data-index="2"></button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // Carousel 1
+            let currentSlide1 = 0;
+            const track1 = document.getElementById("carousel-track1");
+            const prevBtn1 = document.getElementById("prevBtn1");
+            const nextBtn1 = document.getElementById("nextBtn1");
+            const dots1 = document.querySelectorAll(".carousel-dot1");
+            const totalSlides1 = 3;
+
+            function updateCarousel1() {
+                track1.style.transform = `translateX(-${currentSlide1 * 100}%)`;
+
+                dots1.forEach((dot, index) => {
+                    if (index === currentSlide1) {
+                        dot.classList.remove("bg-white/30");
+                        dot.classList.add("bg-pink-300");
+                    } else {
+                        dot.classList.remove("bg-pink-300");
+                        dot.classList.add("bg-white/30");
+                    }
+                });
+            }
+
+            prevBtn1.addEventListener("click", () => {
+                currentSlide1 =
+                    (currentSlide1 - 1 + totalSlides1) % totalSlides1;
+                updateCarousel1();
+            });
+
+            nextBtn1.addEventListener("click", () => {
+                currentSlide1 = (currentSlide1 + 1) % totalSlides1;
+                updateCarousel1();
+            });
+
+            dots1.forEach((dot) => {
+                dot.addEventListener("click", () => {
+                    currentSlide1 = parseInt(dot.dataset.index);
+                    updateCarousel1();
+                });
+            });
+
+            // Carousel 2
+            let currentSlide2 = 0;
+            const track2 = document.getElementById("carousel-track2");
+            const prevBtn2 = document.getElementById("prevBtn2");
+            const nextBtn2 = document.getElementById("nextBtn2");
+            const dots2 = document.querySelectorAll(".carousel-dot2");
+            const totalSlides2 = 3;
+
+            function updateCarousel2() {
+                track2.style.transform = `translateX(-${currentSlide2 * 100}%)`;
+
+                dots2.forEach((dot, index) => {
+                    if (index === currentSlide2) {
+                        dot.classList.remove("bg-white/30");
+                        dot.classList.add("bg-pink-300");
+                    } else {
+                        dot.classList.remove("bg-pink-300");
+                        dot.classList.add("bg-white/30");
+                    }
+                });
+            }
+
+            prevBtn2.addEventListener("click", () => {
+                currentSlide2 =
+                    (currentSlide2 - 1 + totalSlides2) % totalSlides2;
+                updateCarousel2();
+            });
+
+            nextBtn2.addEventListener("click", () => {
+                currentSlide2 = (currentSlide2 + 1) % totalSlides2;
+                updateCarousel2();
+            });
+
+            dots2.forEach((dot) => {
+                dot.addEventListener("click", () => {
+                    currentSlide2 = parseInt(dot.dataset.index);
+                    updateCarousel2();
+                });
+            });
+        </script>
+
+        <!-- Pour nous suivre -->
+        <div class="mb-30 pt-10 mx-20">
+            <div class="flex justify-end">
+                <a
+                    href="https://www.instagram.com/bdemmi_mtb/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+                >
+                    POUR NOUS SUIVRE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const track = document.getElementById("carousel-track");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+        const dots = document.querySelectorAll(".carousel-dot");
+        const totalSlides = 5;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+            dots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.remove("bg-white/30");
+                    dot.classList.add("bg-pink-300");
+                } else {
+                    dot.classList.remove("bg-pink-300");
+                    dot.classList.add("bg-white/30");
+                }
+            });
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        });
+
+        dots.forEach((dot) => {
+            dot.addEventListener("click", () => {
+                currentSlide = parseInt(dot.dataset.index);
+                updateCarousel();
+            });
+        });
+    </script>
+</Layout>
