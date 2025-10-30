@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <div class="min-h-screen text-white relative px-20">
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
         <!-- Fond noir pur avec dégradés radiaux -->
         <div class="fixed inset-0 -z-20 bg-black">
             <div
@@ -28,67 +28,79 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Hero Section -->
-        <section class="container mx-auto px-8 pt-40 pb-20">
-            <h1 class="h1 underline mb-8">Modulo</h1>
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-6 md:mb-8 text-4xl md:text-5xl lg:text-6xl"
+            >
+                Modulo
+            </h1>
 
             <!-- Section Introduction -->
-            <div class="mb-16">
-                <h2 class="h2 text-pink-300 mb-6">
+            <div class="mb-12 md:mb-16">
+                <h2
+                    class="h2 text-pink-300 mb-4 md:mb-6 text-2xl md:text-3xl lg:text-4xl"
+                >
                     Modulo, qu'est-ce-que c'est?
                 </h2>
-                <div class="flex gap-12 items-start">
-                    <!-- Colonne gauche: texte + 3 photos -->
-                    <div class="flex-1 flex flex-col gap-6">
-                        <p class="text-lg">
+                <div
+                    class="flex flex-col lg:flex-row gap-6 lg:gap-12 items-start"
+                >
+                    <!-- Colonne gauche: texte + 2 photos -->
+                    <div class="flex-1 flex flex-col gap-4 md:gap-6">
+                        <p class="text-base md:text-lg">
                             Modulo est une marque de meubles modulables et
-                            écologiques pensée pour s’adapter à tous les espaces
+                            écologiques pensée pour s'adapter à tous les espaces
                             et aux besoins de chacun, elle propose des solutions
-                            d’aménagement pratiques, design et responsables.
+                            d'aménagement pratiques, design et responsables.
                             Grâce à ses matériaux durables et son approche
-                            respectueuse de l’environnement, Modulo combine
+                            respectueuse de l'environnement, Modulo combine
                             fonctionnalité et engagement écologique.
                         </p>
 
                         <!-- Galerie photos - 2 photos côte à côte -->
-                        <div class="flex gap-4">
+                        <div class="flex gap-3 md:gap-4">
                             <img
                                 src="/src/assets/img/modulo1.webp"
                                 alt="Photo Modulo 1"
-                                class="flex-1 h-50 object-cover rounded-xl"
+                                class="w-24 h-24 md:flex-1 md:h-48 object-cover rounded-xl"
                             />
                             <img
                                 src="/src/assets/img/modulo2.webp"
                                 alt="Photo Modulo 2"
-                                class="flex-1 h-48 object-cover rounded-xl"
+                                class="w-24 h-24 md:flex-1 md:h-48 object-cover rounded-xl"
                             />
                         </div>
                     </div>
 
                     <!-- Colonne droite: logo -->
-                    <div class="flex-shrink-0">
+                    <div class="flex-shrink-0 mx-auto lg:mx-0">
                         <img
                             src="/src/assets/img/logomodulo.webp"
                             alt="Logo Modulo"
-                            class="w-80 h-auto object-contain rounded-xl"
+                            class="w-64 md:w-72 lg:w-80 h-auto object-contain rounded-xl"
                         />
                     </div>
                 </div>
             </div>
 
-            <!-- Section En tant que vidéaste -->
+            <!-- Section En tant que Designer graphique -->
             <div class="mb-5">
-                <h2 class="h2 text-pink-300 mb-8 text-center">
+                <h2
+                    class="h2 text-pink-300 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+                >
                     En tant que Designer graphique
                 </h2>
 
-                <div class="grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     <!-- Card 1 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/document-text.svg"
@@ -96,8 +108,8 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
-                                Réalisation d’un dossier de recherches visuelles
+                            <p class="text-sm md:text-base">
+                                Réalisation d'un dossier de recherches visuelles
                                 pour analyser les codes graphiques du secteur et
                                 explorer différentes pistes créatives.
                             </p>
@@ -106,11 +118,11 @@ import Layout from "../layouts/Layout.astro";
 
                     <!-- Card 2 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/presention-chart.svg"
@@ -118,7 +130,7 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
+                            <p class="text-sm md:text-base">
                                 Analyse des tendances pour créer un logo moderne
                                 et cohérent avec les valeurs de la marque
                             </p>
@@ -127,11 +139,11 @@ import Layout from "../layouts/Layout.astro";
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/edit-2.svg"
@@ -139,7 +151,7 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
+                            <p class="text-sm md:text-base">
                                 Conception du logo en traduisant les idées du
                                 dossier
                             </p>
@@ -148,11 +160,11 @@ import Layout from "../layouts/Layout.astro";
 
                     <!-- Card 4 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/messages.svg"
@@ -160,7 +172,7 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
+                            <p class="text-sm md:text-base">
                                 Réflexion autour de la communication visuelle
                                 afin de transmettre un message clair, attractif
                                 et aligné avec les engagements de Modulo
@@ -171,18 +183,26 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </section>
 
-        <!-- Section En réalisant l'aftermovie -->
-        <div class="mb-16 mx-20">
-            <h2 class="h2 mb-8 text-center">En réalisant le logo Modulo</h2>
+        <!-- Section En réalisant le logo Modulo -->
+        <div class="mb-12 md:mb-16 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                En réalisant le logo Modulo
+            </h2>
 
-            <div class="grid grid-cols-3 gap-6">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+            >
                 <!-- Card 1 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">RECHERCHE</h3>
-                    <p class="text-base">
-                        J’ai développé ma capacité d’analyse en explorant
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        RECHERCHE
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai développé ma capacité d'analyse en explorant
                         différentes pistes visuelles et en étudiant les codes
                         graphiques du secteur.
                     </p>
@@ -190,23 +210,27 @@ import Layout from "../layouts/Layout.astro";
 
                 <!-- Card 2 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">STRATÉGIE</h3>
-                    <p class="text-base">
-                        J’ai appris à structurer ma réflexion et à organiser un
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        STRATÉGIE
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai appris à structurer ma réflexion et à organiser un
                         dossier de recherches graphiques pour guider la création
-                        d’un logo efficace.
+                        d'un logo efficace.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">DESIGN</h3>
-                    <p class="text-base">
-                        J’ai renforcé mes compétences en design graphique en
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        DESIGN
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai renforcé mes compétences en design graphique en
                         créant un logo clair, impactant et en accord avec les
                         valeurs de la marque.
                     </p>
@@ -215,23 +239,25 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Section dossier -->
-        <div class="mb-16 pt-10 mx-20">
-            <h2 class="h2 mb-8 text-center">
-                Construction d’un dossier de recherches
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Construction d'un dossier de recherches
             </h2>
 
             <div
-                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-6"
+                class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-4 md:space-y-6"
             >
                 <!-- Image -->
                 <div class="w-full max-w-xl">
                     <div
-                        class="bg-white/10 rounded-3xl p-6 flex items-center justify-center"
+                        class="bg-white/10 rounded-3xl p-4 md:p-6 flex items-center justify-center"
                     >
                         <img
                             src="/src/assets/img/dossiermodulo.webp"
                             alt="Dossier Modulo"
-                            class="w-auto h-100"
+                            class="w-auto h-auto max-h-96"
                         />
                     </div>
                 </div>
@@ -239,86 +265,95 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Section Étude concurrentielle -->
-        <div class="mb-16 pt-10">
-            <h3 class="h3 mb-12">Étude concurrentielle</h3>
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4">
+            <h3 class="h3 mb-8 md:mb-12 text-xl md:text-2xl lg:text-3xl">
+                Étude concurrentielle
+            </h3>
 
-            <div class="flex justify-center gap-8 mb-12">
+            <div
+                class="flex flex-wrap justify-center gap-4 md:gap-8 mb-8 md:mb-12"
+            >
                 <!-- Card 1 - Mobilier de France -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-50 h-50 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-40 h-40 md:w-50 md:h-50 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/mdf.webp"
                         alt="Logo Mobilier de France"
-                        class="w-48 h-auto object-contain"
+                        class="w-32 md:w-48 h-auto object-contain"
                     />
                 </div>
 
                 <!-- Card 2 - IKEA -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-50 h-50 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-40 h-40 md:w-50 md:h-50 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/ikea.webp"
                         alt="Logo IKEA"
-                        class="w-48 h-auto object-contain"
+                        class="w-32 md:w-48 h-auto object-contain"
                     />
                 </div>
 
                 <!-- Card 3 - Habitat -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-50 h-50 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 border border-white/20 w-40 h-40 md:w-50 md:h-50 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/habitat.webp"
                         alt="Logo Habitat"
-                        class="w-48 h-auto object-contain"
+                        class="w-32 md:w-48 h-auto object-contain"
                     />
                 </div>
             </div>
 
             <!-- Texte explicatif -->
-            <div class="max-w-4xl mx-auto text-center relative px-20">
-                <p class="text-base leading-relaxed">
-                    L’étude concurrentielle permet d’analyser les logos et
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-sm md:text-base leading-relaxed">
+                    L'étude concurrentielle permet d'analyser les logos et
                     identités visuelles déjà existants afin de comprendre les
-                    codes du secteur, d’identifier les tendances et de créer un
+                    codes du secteur, d'identifier les tendances et de créer un
                     logo unique qui se démarque tout en restant pertinent.
                 </p>
             </div>
         </div>
 
         <!-- Section ciblage -->
-        <div class="mb-16 pt-10">
-            <h3 class="h3 mb-12">Ciblage</h3>
-            <!-- Deux images côte à côte -->
-            <div class="flex gap-6 justify-center mb-6">
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4">
+            <h3 class="h3 mb-8 md:mb-12 text-xl md:text-2xl lg:text-3xl">
+                Ciblage
+            </h3>
+
+            <!-- Deux images côte à côté -->
+            <div
+                class="flex flex-col md:flex-row gap-4 md:gap-6 justify-center mb-4 md:mb-6"
+            >
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                 >
                     <img
                         src="/src/assets/img/persona1.webp"
                         alt="persona 1"
-                        class="w-auto h-70 object-contain rounded-xl"
+                        class="w-full md:w-auto h-auto md:h-70 object-contain rounded-xl"
                     />
                 </div>
 
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                 >
                     <img
                         src="/src/assets/img/persona2.webp"
                         alt="persona 2"
-                        class="w-auto h-70 object-contain rounded-xl"
+                        class="w-full md:w-auto h-auto md:h-70 object-contain rounded-xl"
                     />
                 </div>
             </div>
 
             <!-- Texte en dessous -->
-            <div class="max-w-4xl mx-auto text-center px-20">
-                <p class="text-base leading-relaxed">
-                    Le ciblage permet de définir clairement à qui s’adresse la
-                    marque, d’identifier les attentes des utilisateurs et de
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-sm md:text-base leading-relaxed">
+                    Le ciblage permet de définir clairement à qui s'adresse la
+                    marque, d'identifier les attentes des utilisateurs et de
                     créer une identité visuelle qui parle directement à ce
                     public.
                 </p>
@@ -326,27 +361,33 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Section moodboard -->
-        <div class="mb-16 pt-10">
-            <h2 class="h2 mb-8 text-center">Moodboard</h2>
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Moodboard
+            </h2>
 
-            <div class="flex gap-12 items-center max-w-6xl mx-auto">
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center max-w-6xl mx-auto"
+            >
                 <!-- Image à gauche -->
-                <div class="flex-1">
+                <div class="flex-1 w-full">
                     <div
-                        class="bg-white/10 rounded-3xl p-8 flex items-center justify-center"
+                        class="bg-white/10 rounded-3xl p-6 md:p-8 flex items-center justify-center"
                     >
                         <img
                             src="/src/assets/img/moodboard.webp"
                             alt="moodboard modulo"
-                            class="w-120 h-auto"
+                            class="w-full h-auto"
                         />
                     </div>
                 </div>
 
                 <!-- Textes à droite -->
-                <div class="flex-1 space-y-6">
+                <div class="flex-1 space-y-4 md:space-y-6">
                     <div>
-                        <p class="text-base">
+                        <p class="text-sm md:text-base">
                             Le moodboard sert à rassembler des inspirations
                             visuelles (couleurs, typographies, formes,
                             ambiances) afin de définir une direction créative
@@ -358,61 +399,68 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Section Recherches graphiques -->
-        <div class="mb-16 pt-10">
-            <h3 class="h3 mb-12">Recherches graphiques</h3>
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10">
+            <h3 class="h3 mb-8 md:mb-12 text-xl md:text-2xl lg:text-3xl px-4">
+                Recherches graphiques
+            </h3>
 
             <!-- Carrousel horizontal scrollable -->
-            <div class="overflow-x-auto mb-12 -mx-20 px-20">
-                <div class="flex gap-6 pb-4" style="width: max-content;">
+            <div
+                class="overflow-x-auto mb-8 md:mb-12 -mx-4 md:-mx-10 lg:-mx-20 px-4 md:px-10 lg:px-20"
+            >
+                <div
+                    class="flex gap-4 md:gap-6 pb-4"
+                    style="width: max-content;"
+                >
                     <!-- Card 1 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                     >
                         <img
                             src="/src/assets/img/croquis.webp"
                             alt="page de croquis"
-                            class="h-80 w-auto object-contain rounded-xl"
+                            class="h-64 md:h-80 w-auto object-contain rounded-xl"
                         />
                     </div>
 
                     <!-- Card 2 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                     >
                         <img
                             src="/src/assets/img/recherchesnum1.webp"
                             alt="page de recherches numériques"
-                            class="h-80 w-auto object-contain rounded-xl"
+                            class="h-64 md:h-80 w-auto object-contain rounded-xl"
                         />
                     </div>
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                     >
                         <img
                             src="/src/assets/img/recherchesnum2.webp"
                             alt="page de recherches numérique"
-                            class="h-80 w-auto object-contain rounded-xl"
+                            class="h-64 md:h-80 w-auto object-contain rounded-xl"
                         />
                     </div>
 
                     <!-- Card 4 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 flex-shrink-0"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 flex-shrink-0"
                     >
                         <img
                             src="/src/assets/img/recherchesnum3.webp"
                             alt="page de recherches numérique"
-                            class="h-80 w-auto object-contain rounded-xl"
+                            class="h-64 md:h-80 w-auto object-contain rounded-xl"
                         />
                     </div>
                 </div>
             </div>
 
             <!-- Texte explicatif -->
-            <div class="max-w-4xl mx-auto text-center relative px-20">
-                <p class="text-base leading-relaxed">
+            <div class="max-w-4xl mx-auto text-center px-4">
+                <p class="text-sm md:text-base leading-relaxed">
                     Les recherches graphiques à travers des croquis permettent
                     d'explorer plusieurs pistes créatives, d'expérimenter des
                     formes et de poser les bases du logo avant sa version
@@ -443,13 +491,15 @@ import Layout from "../layouts/Layout.astro";
         </style>
 
         <!-- Section Identité finale et mockups -->
-        <div class="mb-30 pt-10">
-            <h3 class="h3 mb-12">Identité finale et mockups</h3>
+        <div class="mb-20 md:mb-30 pt-6 md:pt-10 px-4">
+            <h3 class="h3 mb-8 md:mb-12 text-xl md:text-2xl lg:text-3xl">
+                Identité finale et mockups
+            </h3>
 
-            <div class="flex justify-center gap-8 mb-12">
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
                 <!-- Card 1 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 w-72 h-72 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/mockup1.webp"
@@ -460,7 +510,7 @@ import Layout from "../layouts/Layout.astro";
 
                 <!-- Card 2 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 w-72 h-72 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/mockup2.webp"
@@ -471,7 +521,7 @@ import Layout from "../layouts/Layout.astro";
 
                 <!-- Card 3 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20 w-72 h-72 flex items-center justify-center"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20 w-56 h-56 md:w-72 md:h-72 flex items-center justify-center"
                 >
                     <img
                         src="/src/assets/img/mockup3.webp"
