@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <div class="min-h-screen text-white relative px-20">
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
         <!-- Fond noir pur avec dégradés radiaux -->
         <div class="fixed inset-0 -z-20 bg-black">
             <div
@@ -28,16 +28,24 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Hero Section -->
-        <section class="container mx-auto px-8 pt-40 pb-20">
-            <h1 class="h1 underline mb-8">Festival l'Âge de Bière</h1>
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-6 md:mb-8 text-4xl md:text-5xl lg:text-6xl"
+            >
+                Festival l'Âge de Bière
+            </h1>
 
             <!-- Section Introduction -->
-            <div class="mb-16">
-                <h2 class="h2 mb-6">L'Âge de Bière, qu'est-ce-que c'est?</h2>
-                <div class="flex gap-12">
+            <div class="mb-12 md:mb-16">
+                <h2 class="h2 mb-4 md:mb-6 text-2xl md:text-3xl lg:text-4xl">
+                    L'Âge de Bière, qu'est-ce-que c'est?
+                </h2>
+                <div class="flex flex-col lg:flex-row gap-6 lg:gap-12">
                     <!-- Colonne gauche: texte + 3 photos -->
-                    <div class="flex-1 flex flex-col gap-6">
-                        <p class="text-lg">
+                    <div class="flex-1 flex flex-col gap-4 md:gap-6">
+                        <p class="text-base md:text-lg">
                             L'Âge de Bière, à Lachapelle-sous-Chaux, est un
                             festival mêlant bière artisanale et rock live. Entre
                             grands musiciens et animations locales, c'est un
@@ -47,48 +55,52 @@ import Layout from "../layouts/Layout.astro";
                         </p>
 
                         <!-- Galerie photos - 3 photos côte à côte -->
-                        <div class="flex gap-4">
+                        <div class="flex gap-3 md:gap-4">
                             <img
                                 src="/src/assets/img/biere1.webp"
                                 alt="Photo festival 1"
-                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                                class="w-24 h-24 md:flex-1 md:h-auto md:w-30 object-cover rounded-xl"
                             />
                             <img
                                 src="/src/assets/img/biere2.webp"
                                 alt="Photo festival 2"
-                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                                class="w-24 h-24 md:flex-1 md:h-auto md:w-30 object-cover rounded-xl"
                             />
                             <img
                                 src="/src/assets/img/biere3.webp"
                                 alt="Photo festival 3"
-                                class="flex-1 h-auto w-30 object-cover rounded-xl"
+                                class="w-24 h-24 md:flex-1 md:h-auto md:w-30 object-cover rounded-xl"
                             />
                         </div>
                     </div>
 
-                    <!-- Colonne droite: logo qui prend toute la hauteur -->
-                    <div class="flex-shrink-0">
+                    <!-- Colonne droite: logo -->
+                    <div class="flex-shrink-0 mx-auto lg:mx-0">
                         <img
                             src="/src/assets/img/logobiere.webp"
                             alt="Logo Festival Âge de Bière"
-                            class="w-64 h-full object-cover rounded-xl"
+                            class="w-48 md:w-56 lg:w-64 h-auto object-contain rounded-xl"
                         />
                     </div>
                 </div>
             </div>
 
             <!-- Section En tant que vidéaste -->
-            <div class="mb-5 pt-10">
-                <h2 class="h2 mb-8 text-center">En tant que Vidéaste</h2>
+            <div class="mb-5 pt-6 md:pt-10">
+                <h2
+                    class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+                >
+                    En tant que Vidéaste
+                </h2>
 
-                <div class="grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
                     <!-- Card 1 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/video-square.svg"
@@ -96,8 +108,8 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
-                                Valorisation de l’événement sur les réseaux et
+                            <p class="text-sm md:text-base">
+                                Valorisation de l'événement sur les réseaux et
                                 supports de communication grâce à un contenu
                                 audiovisuel attractif
                             </p>
@@ -106,11 +118,11 @@ import Layout from "../layouts/Layout.astro";
 
                     <!-- Card 2 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/message-2.svg"
@@ -118,8 +130,8 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
-                                Mise en avant de l’identité du festival à
+                            <p class="text-sm md:text-base">
+                                Mise en avant de l'identité du festival à
                                 travers un storytelling visuel impactant
                             </p>
                         </div>
@@ -127,11 +139,11 @@ import Layout from "../layouts/Layout.astro";
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/video-tick.svg"
@@ -139,21 +151,21 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
+                            <p class="text-sm md:text-base">
                                 Captation des moments forts du festival pour
-                                mettre en valeur l’ambiance et l’énergie de
-                                l’événement
+                                mettre en valeur l'ambiance et l'énergie de
+                                l'événement
                             </p>
                         </div>
                     </div>
 
                     <!-- Card 4 -->
                     <div
-                        class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                        class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                     >
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3 md:gap-4">
                             <div
-                                class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center p-4 flex-shrink-0"
+                                class="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-2xl flex items-center justify-center p-3 md:p-4 flex-shrink-0"
                             >
                                 <img
                                     src="/src/assets/svg/video.svg"
@@ -161,8 +173,8 @@ import Layout from "../layouts/Layout.astro";
                                     class="w-full h-full"
                                 />
                             </div>
-                            <p class="text-base">
-                                Réalisation de l’aftermovie, du tournage au
+                            <p class="text-sm md:text-base">
+                                Réalisation de l'aftermovie, du tournage au
                                 montage, pour offrir une vidéo dynamique et
                                 immersive
                             </p>
@@ -173,31 +185,39 @@ import Layout from "../layouts/Layout.astro";
         </section>
 
         <!-- Section En réalisant l'aftermovie -->
-        <div class="mb-16 mx-20">
-            <h2 class="h2 mb-8 text-center">
+        <div class="mb-12 md:mb-16 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
                 En réalisant l'aftermovie du festival
             </h2>
 
-            <div class="grid grid-cols-3 gap-6">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"
+            >
                 <!-- Card 1 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">CAPTATION</h3>
-                    <p class="text-base">
-                        J’ai appris à filmer dans un environnement live, à
-                        capter l’énergie du public et les moments clés pour
-                        retranscrire l’ambiance unique du festival.
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        CAPTATION
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai appris à filmer dans un environnement live, à
+                        capter l'énergie du public et les moments clés pour
+                        retranscrire l'ambiance unique du festival.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">MONTAGE</h3>
-                    <p class="text-base">
-                        J’ai renforcé mes compétences en storytelling visuel en
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        MONTAGE
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai renforcé mes compétences en storytelling visuel en
                         transformant des heures de rushs en une vidéo rythmée et
                         immersive.
                     </p>
@@ -205,21 +225,27 @@ import Layout from "../layouts/Layout.astro";
 
                 <!-- Card 3 -->
                 <div
-                    class="bg-white/10 backdrop-blur rounded-3xl p-6 border border-white/20"
+                    class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-6 border border-white/20"
                 >
-                    <h3 class="h3 text-center mb-4">COLLABORATION</h3>
-                    <p class="text-base">
-                        J’ai travaillé en lien avec l’équipe du festival pour
+                    <h3 class="h3 text-center mb-3 md:mb-4 text-xl md:text-2xl">
+                        COLLABORATION
+                    </h3>
+                    <p class="text-sm md:text-base">
+                        J'ai travaillé en lien avec l'équipe du festival pour
                         comprendre leurs attentes et créer un contenu qui
-                        reflète au mieux l’identité de l’événement.
+                        reflète au mieux l'identité de l'événement.
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Section Aftermovie -->
-        <div class="mb-16 pt-10">
-            <h2 class="h2 mb-8 text-center">Aftermovie</h2>
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10 px-4 md:px-0">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
+                Aftermovie
+            </h2>
 
             <div
                 class="relative w-full max-w-4xl mx-auto aspect-video rounded-3xl overflow-hidden"
@@ -237,20 +263,286 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <!-- Section Étape par étape - CARROUSEL -->
-        <div class="mb-16 pt-10">
-            <h2 class="h2 mb-8 text-center">
+        <div class="mb-12 md:mb-16 pt-6 md:pt-10">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-xl md:text-2xl lg:text-3xl px-4"
+            >
                 Le Festival L'Âge de Bière, étape par étape
             </h2>
 
-            <div class="relative max-w-6xl mx-auto">
+            <div class="relative max-w-6xl mx-auto px-4 md:px-0">
                 <!-- Carrousel Container -->
                 <div id="carousel" class="overflow-hidden">
                     <div
                         id="carousel-track"
                         class="flex transition-transform duration-500 ease-in-out"
                     >
-                        <!-- Slide 1 - Cards 1 et 2 -->
-                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                        <!-- Mobile: 1 card par slide -->
+                        <!-- Card 1 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape1.webp"
+                                        alt="Étape 1"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            29<br />mai<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">Montage de la scène</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape2.webp"
+                                        alt="Étape 2"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            29<br />mai<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Installation des chapiteaux pour les espaces
+                                    exposants et restauration
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape3.webp"
+                                        alt="Étape 3"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Préparation technique : sonorisation,
+                                    éclairage et coordination régie
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape4.webp"
+                                        alt="Étape 4"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Répétitions des groupes sur scène
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 5 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape5.webp"
+                                        alt="Étape 5"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Installation des exposants
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 6 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape7.webp"
+                                        alt="Étape 6"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Arrivée des festivaliers et ouverture des
+                                    stands
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 7 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape8.webp"
+                                        alt="Étape 7"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Concours de dégustation de bière
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 8 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape9.webp"
+                                        alt="Étape 8"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">
+                                    Début des premiers concerts
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 9 -->
+                        <div
+                            class="min-w-full md:hidden flex justify-center px-2"
+                        >
+                            <div
+                                class="bg-white/10 backdrop-blur rounded-3xl p-4 overflow-hidden max-w-sm w-full"
+                            >
+                                <div class="flex gap-3 mb-3">
+                                    <img
+                                        src="/src/assets/img/etape10.webp"
+                                        alt="Étape 9"
+                                        class="h-32 w-auto object-cover rounded-xl my-2 mr-4"
+                                    />
+                                    <div
+                                        class="flex flex-col justify-center items-center"
+                                    >
+                                        <span
+                                            class="text-pink-300 font-bold text-center leading-tight text-sm"
+                                        >
+                                            30<br />août<br />2025
+                                        </span>
+                                    </div>
+                                </div>
+                                <p class="text-xs">Fin des concerts</p>
+                            </div>
+                        </div>
+
+                        <!-- Desktop: 2 cards par slide -->
+                        <!-- Slide 1 -->
+                        <div
+                            class="min-w-full hidden md:grid grid-cols-2 gap-8 px-4"
+                        >
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -272,7 +564,6 @@ import Layout from "../layouts/Layout.astro";
                                 </div>
                                 <p class="text-sm">Montage de la scène</p>
                             </div>
-
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -299,8 +590,10 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </div>
 
-                        <!-- Slide 2 - Cards 3 et 4 -->
-                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                        <!-- Slide 2 -->
+                        <div
+                            class="min-w-full hidden md:grid grid-cols-2 gap-8 px-4"
+                        >
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -325,7 +618,6 @@ import Layout from "../layouts/Layout.astro";
                                     éclairage et coordination régie
                                 </p>
                             </div>
-
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -351,8 +643,10 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </div>
 
-                        <!-- Slide 3 - Cards 5 et 6 -->
-                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                        <!-- Slide 3 -->
+                        <div
+                            class="min-w-full hidden md:grid grid-cols-2 gap-8 px-4"
+                        >
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -376,7 +670,6 @@ import Layout from "../layouts/Layout.astro";
                                     Installation des exposants
                                 </p>
                             </div>
-
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -403,8 +696,10 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </div>
 
-                        <!-- Slide 4 - Cards 7 et 8 -->
-                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                        <!-- Slide 4 -->
+                        <div
+                            class="min-w-full hidden md:grid grid-cols-2 gap-8 px-4"
+                        >
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -428,7 +723,6 @@ import Layout from "../layouts/Layout.astro";
                                     Concours de dégustation de bière
                                 </p>
                             </div>
-
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -454,8 +748,10 @@ import Layout from "../layouts/Layout.astro";
                             </div>
                         </div>
 
-                        <!-- Slide 5 - Cards 9 et 10 -->
-                        <div class="min-w-full grid grid-cols-2 gap-8 px-4">
+                        <!-- Slide 5 -->
+                        <div
+                            class="min-w-full hidden md:grid grid-cols-2 gap-8 px-4"
+                        >
                             <div
                                 class="bg-white/10 backdrop-blur rounded-3xl p-8 overflow-hidden"
                             >
@@ -484,10 +780,10 @@ import Layout from "../layouts/Layout.astro";
                 <!-- Boutons de navigation -->
                 <button
                     id="prevBtn"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:-translate-x-4 w-10 h-10 md:w-12 md:h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg z-10"
                 >
                     <svg
-                        class="w-6 h-6 text-black"
+                        class="w-5 h-5 md:w-6 md:h-6 text-black"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -502,10 +798,10 @@ import Layout from "../layouts/Layout.astro";
 
                 <button
                     id="nextBtn"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:translate-x-4 w-10 h-10 md:w-12 md:h-12 bg-pink-300 hover:bg-pink-400 rounded-full flex items-center justify-center transition shadow-lg z-10"
                 >
                     <svg
-                        class="w-6 h-6 text-black"
+                        class="w-5 h-5 md:w-6 md:h-6 text-black"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -518,36 +814,68 @@ import Layout from "../layouts/Layout.astro";
                     </svg>
                 </button>
 
-                <!-- Indicateurs (5 dots pour 5 slides) -->
-                <div class="flex justify-center gap-2 mt-8">
+                <!-- Indicateurs -->
+                <div class="flex justify-center gap-2 mt-6 md:mt-8">
+                    <!-- Mobile: 9 dots -->
                     <button
-                        class="carousel-dot w-3 h-3 rounded-full bg-pink-300"
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-pink-300 md:hidden"
                         data-index="0"></button>
                     <button
-                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
                         data-index="1"></button>
                     <button
-                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
                         data-index="2"></button>
                     <button
-                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
                         data-index="3"></button>
                     <button
-                        class="carousel-dot w-3 h-3 rounded-full bg-white/30"
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
                         data-index="4"></button>
+                    <button
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
+                        data-index="5"></button>
+                    <button
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
+                        data-index="6"></button>
+                    <button
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
+                        data-index="7"></button>
+                    <button
+                        class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/30 md:hidden"
+                        data-index="8"></button>
+
+                    <!-- Desktop: 5 dots -->
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-pink-300 hidden md:block"
+                        data-index="9"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30 hidden md:block"
+                        data-index="10"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30 hidden md:block"
+                        data-index="11"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30 hidden md:block"
+                        data-index="12"></button>
+                    <button
+                        class="carousel-dot w-3 h-3 rounded-full bg-white/30 hidden md:block"
+                        data-index="13"></button>
                 </div>
             </div>
         </div>
 
         <!-- Section Presse -->
-        <div class="mb-30 pt-10 mx-20">
-            <h2 class="h2 mb-8 text-center">
+        <div class="mb-20 md:mb-30 pt-6 md:pt-10 mx-4 md:mx-10 lg:mx-20">
+            <h2
+                class="h2 mb-6 md:mb-8 text-center text-2xl md:text-3xl lg:text-4xl"
+            >
                 Festival de l'Âge de Bière - Presse
             </h2>
 
-            <div class="flex gap-12 items-center">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
                 <div class="flex-1">
-                    <p class="text-lg mb-6">
+                    <p class="text-base md:text-lg mb-4 md:mb-6">
                         Le Pays retrace autour de l'aftermovie du Festival de
                         l'Âge de Bière le déroulement de la presse locale. Cela
                         met en valeur mon travail de captation avec la rédaction
@@ -557,16 +885,16 @@ import Layout from "../layouts/Layout.astro";
                         href="https://www.estrepublicain.fr/societe/2025/09/05/les-artisans-mis-a-l-honneur-durant-l-age-de-biere"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+                        class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
                     >
                         LIRE L'ARTICLE
                     </a>
                 </div>
-                <div class="flex-shrink-0">
+                <div class="flex-shrink-0 w-full lg:w-auto">
                     <img
                         src="/src/assets/img/bierepresse.webp"
                         alt="Article de presse"
-                        class="w-96 h-auto rounded-xl"
+                        class="w-full lg:w-96 h-auto rounded-xl"
                     />
                 </div>
             </div>
@@ -574,18 +902,22 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <script>
+        // Détection mobile/desktop
+        const isMobile = window.innerWidth < 768;
+
         let currentSlide = 0;
         const track = document.getElementById("carousel-track");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
         const dots = document.querySelectorAll(".carousel-dot");
-        const totalSlides = 5;
+        const totalSlides = isMobile ? 9 : 5; // 9 slides mobile, 5 slides desktop
 
         function updateCarousel() {
             track.style.transform = `translateX(-${currentSlide * 100}%)`;
 
             dots.forEach((dot, index) => {
-                if (index === currentSlide) {
+                const dotIndex = parseInt(dot.dataset.index);
+                if (dotIndex === currentSlide) {
                     dot.classList.remove("bg-white/30");
                     dot.classList.add("bg-pink-300");
                 } else {
@@ -608,6 +940,7 @@ import Layout from "../layouts/Layout.astro";
         dots.forEach((dot) => {
             dot.addEventListener("click", () => {
                 currentSlide = parseInt(dot.dataset.index);
+                if (currentSlide >= 9) currentSlide -= 9; // Ajustement pour desktop
                 updateCarousel();
             });
         });
