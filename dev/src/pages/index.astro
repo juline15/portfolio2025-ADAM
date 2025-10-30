@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<div class="min-h-screen text-white relative px-20">
+	<div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
 		<!-- Fond noir pur avec dégradés radiaux plus visibles -->
 		<div class="fixed inset-0 -z-20 bg-black">
 			<div
@@ -29,36 +29,36 @@ import Layout from "../layouts/Layout.astro";
 
 		<!-- Hero Section -->
 		<section
-			class="container mx-auto px-8 pt-40 py-20 flex justify-between items-center"
+			class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 py-10 md:py-20 flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0"
 		>
 			<div class="max-w-xl">
 				<img
-					class="w-12 h-auto"
+					class="w-10 md:w-12 h-auto"
 					src="/src/assets/img/im.svg"
 					alt="I'm en écriture manuscrite"
 				/>
-				<h1 class="titre">
+				<h1 class="titre text-5xl md:text-6xl lg:text-7xl">
 					Juline<br />
 					ADAM
 				</h1>
-				<p class="text-lg mb-8">
+				<p class="text-base md:text-lg mb-6 md:mb-8">
 					Créatrice d'expériences visuelles, je suis <span
 						id="rotating-text"
 						class="font-semibold"></span>
 				</p>
-				<div class="flex gap-4">
+				<div class="flex gap-3 md:gap-4">
 					<button
 						id="scrollToProjects"
-						class="bg-white/20 backdrop-blur hover:bg-white/30 px-6 py-3 rounded-lg transition"
+						class="bg-white/20 backdrop-blur hover:bg-white/30 px-4 md:px-6 py-2 md:py-3 rounded-lg transition text-sm md:text-base"
 					>
 						Mes projets
 					</button>
 					<a
 						href="/contact"
-						class="bg-white/20 backdrop-blur hover:bg-white/30 px-6 py-3 rounded-lg transition"
+						class="bg-white/20 backdrop-blur hover:bg-white/30 px-4 md:px-6 py-2 md:py-3 rounded-lg transition text-sm md:text-base"
 					>
 						Me contacter
-				</a>
+					</a>
 				</div>
 			</div>
 
@@ -67,14 +67,18 @@ import Layout from "../layouts/Layout.astro";
 				<img
 					src="/src/assets/img/Juline.svg"
 					alt="Avatar Juline ADAM"
-					class="h-70 w-auto"
+					class="h-56 md:h-64 lg:h-70 w-auto"
 				/>
 			</div>
 		</section>
 
 		<!-- Skills Marquee -->
-		<div class="bg-black/30 backdrop-blur py-4 overflow-hidden -mx-20">
-			<div class="flex gap-8 animate-marquee whitespace-nowrap">
+		<div
+			class="bg-black/30 backdrop-blur py-3 md:py-4 overflow-hidden -mx-4 md:-mx-10 lg:-mx-20"
+		>
+			<div
+				class="flex gap-6 md:gap-8 animate-marquee whitespace-nowrap text-sm md:text-base"
+			>
 				<span class="flex items-center gap-2">Veille ✦</span>
 				<span class="flex items-center gap-2">Prototypage ✦</span>
 				<span class="flex items-center gap-2">Tests Utilisateurs ✦</span
@@ -94,45 +98,54 @@ import Layout from "../layouts/Layout.astro";
 		</div>
 
 		<!-- Projects Section -->
-		<section id="projets" class="container mx-auto px-8 py-20">
-			<h2 class="h2 mb-12 underline underline-offset-8">Projets</h2>
+		<section
+			id="projets"
+			class="container mx-auto px-4 md:px-8 py-12 md:py-20"
+		>
+			<h2
+				class="h2 mb-8 md:mb-12 underline underline-offset-8 text-3xl md:text-4xl lg:text-5xl"
+			>
+				Projets
+			</h2>
 
 			<!-- BDE MMI Project -->
 			<div
-				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
 			>
-				<div>
-					<h3 class="h3 mb-4">BDE MMI</h3>
+				<div class="w-full lg:w-auto">
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						BDE MMI
+					</h3>
 					<img
 						src="/src/assets/img/card1.webp"
 						alt="BDE MMI"
-						class="w-auto h-50 rounded-2xl object-cover mb-6"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover mb-4 md:mb-6"
 					/>
 				</div>
-				<div class="max-w-md">
-					<p class="mb-6">
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
 						BDE (Bureau des étudiants), association étudiante qui
 						organise la vie étudiante d'une école ou université en
 						proposant des événements, activités et services pour
 						créer du lien entre les étudiants.
 					</p>
-					<div class="flex flex-wrap gap-3 mb-4">
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>RÉDACTION</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>ÉVÉNEMENTIEL</span
 						>
 					</div>
 					<a
 						href="/bde"
-						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
 					>
 						EN SAVOIR PLUS
 					</a>
@@ -141,46 +154,50 @@ import Layout from "../layouts/Layout.astro";
 
 			<!-- 2BeBetter Project -->
 			<div
-				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6"
 			>
-				<div class="max-w-md">
-					<p class="mb-6">
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
 						2BeBetter, une plateforme d'entraide solidaire et
 						sécurisée pour les personnes victimes de harcèlement
 						sous toutes ses formes.
 					</p>
-					<div class="flex flex-wrap gap-3 mb-4">
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>COMMUNICATION</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>UX</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>UI</span
 						>
 					</div>
 					<a
 						href="/2bebetter"
-						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
 					>
 						EN SAVOIR PLUS
 					</a>
 				</div>
-				<div class="flex flex-col items-end">
-					<h3 class="h3 mb-4">2BeBetter</h3>
-					<div class="flex gap-4">
+				<div
+					class="flex flex-col items-start lg:items-end w-full lg:w-auto"
+				>
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						2BeBetter
+					</h3>
+					<div class="flex gap-4 w-full lg:w-auto">
 						<img
 							src="/src/assets/img/card2.webp"
 							alt="2BeBetter"
-							class="w-auto h-50 rounded-3xl object-cover"
+							class="w-full lg:w-auto h-auto lg:h-50 rounded-3xl object-cover"
 						/>
 					</div>
 				</div>
@@ -188,40 +205,42 @@ import Layout from "../layouts/Layout.astro";
 
 			<!-- Festival L'Âge de Bière -->
 			<div
-				class="bg-white/10 backdrop-blur rounded-3xl p-8 mb-8 flex justify-between items-center"
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
 			>
-				<div>
-					<h3 class="h3 mb-4">Festival L'Âge de Bière</h3>
+				<div class="w-full lg:w-auto">
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						Festival L'Âge de Bière
+					</h3>
 					<img
 						src="/src/assets/img/card3.webp"
 						alt="Festival"
-						class="w-auto h-50 rounded-2xl object-cover mb-4"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover mb-3 md:mb-4"
 					/>
 				</div>
-				<div class="max-w-md">
-					<p class="mb-6">
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
 						Festival de l'Âge de Bière : événement festif à
 						Lachapelle-sous-Chaux qui associe concerts rock et
 						dégustations de bières artisanales, dans une ambiance
 						rock et musicale.
 					</p>
-					<div class="flex flex-wrap gap-3 mb-4">
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>VIDÉO</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>MONTAGE</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>CAPTATION</span
 						>
 					</div>
 					<a
 						href="/age-de-biere"
-						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
 					>
 						EN SAVOIR PLUS
 					</a>
@@ -230,41 +249,44 @@ import Layout from "../layouts/Layout.astro";
 
 			<!-- MODULO Project -->
 			<div
-				class="bg-white/10 backdrop-blur rounded-3xl p-8 flex justify-between items-center"
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6"
 			>
-				<div class="max-w-md">
-					<p class="mb-6">
-						2BeBetter, une plateforme d'entraide solidaire et
-						sécurisée pour les personnes victimes de harcèlement
-						sous toutes ses formes.
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
+						Modulo, une marque de meubles modulables et écologiques
+						pensée pour s'adapter à tous les espaces et aux besoins
+						de chacun, elle propose des solutions d'aménagement
+						pratiques, design et responsables.
 					</p>
-					<div class="flex flex-wrap gap-3 mb-4">
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>DESIGN</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>ANALYSE</span
 						>
 						<span
-							class="border-3 border-indigo-300 rounded-full px-4 py-1 text-sm"
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
 							>BRANDING</span
 						>
 					</div>
 					<a
 						href="/modulo"
-						class="text-black bg-indigo-300 hover:bg-indigo-400 px-6 py-2 rounded-full transition inline-block"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
 					>
 						EN SAVOIR PLUS
 					</a>
 				</div>
-				<div class="flex flex-col items-end">
-					<h3 class="h3 mb-4">MODULO</h3>
+				<div
+					class="flex flex-col items-start lg:items-end w-full lg:w-auto"
+				>
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">MODULO</h3>
 					<img
 						src="/src/assets/img/card4.webp"
 						alt="Modulo"
-						class="w-auto h-50 rounded-2xl object-cover"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover"
 					/>
 				</div>
 			</div>
