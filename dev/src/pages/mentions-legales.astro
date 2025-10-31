@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-12 md:mb-16 text-4xl md:text-5xl lg:text-6xl text-center"
+            >
+                Mentions légales
+            </h1>
+
+            <!-- Grid 2 colonnes -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto"
+            >
+                <!-- Éditeur du site -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Éditeur du site
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Ce site est un portfolio personnel présentant mes
+                            projets en communication digitale, design graphique
+                            et développement web.
+                        </p>
+                        <ul class="space-y-2 list-none">
+                            <li>
+                                <span class="text-pink-300">•</span> Prénom et Nom
+                                : Juline ADAM
+                            </li>
+                            <li>
+                                <span class="text-pink-300">•</span> Adresse : Montbéliard
+                            </li>
+                            <li>
+                                <span class="text-pink-300">•</span> Contact :
+                                <a
+                                    href="mailto:adam.juline@gmail.com"
+                                    class="text-indigo-300 hover:text-indigo-400 transition"
+                                >
+                                    adam.juline@gmail.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Hébergement -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Hébergement
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>Ce site est hébergé par :</p>
+                        <div class="space-y-2">
+                            <p class="font-medium">Infomaniak Network SA</p>
+                            <p>
+                                Rue Eugène-Marziano 25, 1227 Les Acacias, Genève
+                                — Suisse
+                            </p>
+                            <p>
+                                <span class="text-pink-300">📞</span> +41 22 820
+                                35 44
+                            </p>
+                            <p>
+                                <span class="text-pink-300">🌐</span>
+                                <a
+                                    href="https://www.infomaniak.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="text-indigo-300 hover:text-indigo-400 transition"
+                                >
+                                    https://www.infomaniak.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Propriété intellectuelle -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Propriété intellectuelle
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            L'ensemble des contenus présents sur ce site
+                            (textes, visuels, vidéos, projets) sont mes
+                            créations, sauf mention contraire. Toute
+                            reproduction, distribution, modification ou
+                            utilisation sans autorisation est interdite.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Responsabilité -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Responsabilité
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Le contenu de ce site est fourni à titre informatif.
+                            Je ne saurais être tenue responsable de
+                            l'utilisation qui pourrait en être faite.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section retour -->
+            <div class="text-center mt-12 md:mt-16">
+                <a
+                    href="/"
+                    class="inline-block bg-indigo-300 hover:bg-indigo-400 text-black px-6 md:px-8 py-3 rounded-full transition font-medium"
+                >
+                    Retour à l'accueil
+                </a>
+            </div>
+        </section>
+    </div>
+</Layout>

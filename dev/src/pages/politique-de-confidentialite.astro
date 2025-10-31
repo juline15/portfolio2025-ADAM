@@ -1,0 +1,130 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-12 md:mb-16 text-4xl md:text-5xl lg:text-6xl text-center"
+            >
+                Politique de confidentialité
+            </h1>
+
+            <!-- Grid 2 colonnes -->
+            <div
+                class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto"
+            >
+                <!-- Collecte de données -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Collecte de données
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Ce site est un portfolio et n'a pas vocation à
+                            collecter des données personnelles. Cependant, si
+                            vous utilisez le formulaire de contact, les
+                            informations saisies (nom, e-mail, message) sont
+                            uniquement utilisées pour répondre à votre demande.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Utilisation des données -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Utilisation des données
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Les données transmises via le formulaire de contact
+                            ne sont ni stockées à des fins commerciales ni
+                            transmises à des tiers.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cookies -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Cookies
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Ce site n'utilise pas de cookies de suivi ni
+                            d'outils de publicité. Seuls des cookies techniques
+                            peuvent être utilisés par l'hébergeur (Infomaniak)
+                            pour assurer le bon fonctionnement du site.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Droits des utilisateurs -->
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 border border-white/20"
+                >
+                    <h2 class="h2 text-pink-300 mb-6 text-2xl md:text-3xl">
+                        Droits des utilisateurs
+                    </h2>
+                    <div class="space-y-4 text-sm md:text-base">
+                        <p>
+                            Conformément à la réglementation, vous disposez d'un
+                            droit d'accès, de rectification et de suppression de
+                            vos données. Pour toute demande, vous pouvez me
+                            contacter à l'adresse suivante :
+                            <a
+                                href="mailto:adam.juline@gmail.com"
+                                class="text-indigo-300 hover:text-indigo-400 transition"
+                            >
+                                adam.juline@gmail.com
+                            </a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section retour -->
+            <div class="text-center mt-12 md:mt-16">
+                <a
+                    href="/"
+                    class="inline-block bg-indigo-300 hover:bg-indigo-400 text-black px-6 md:px-8 py-3 rounded-full transition font-medium"
+                >
+                    Retour à l'accueil
+                </a>
+            </div>
+        </section>
+    </div>
+</Layout>
