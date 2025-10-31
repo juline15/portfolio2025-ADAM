@@ -1,0 +1,229 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+    <div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
+        <!-- Fond noir pur avec dégradés radiaux -->
+        <div class="fixed inset-0 -z-20 bg-black">
+            <div
+                class="absolute inset-0"
+                style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+            >
+            </div>
+        </div>
+
+        <!-- Overlay sombre avec blur -->
+        <div
+            class="fixed inset-0 -z-10 backdrop-blur-md"
+            style="background-color: rgba(0, 0, 0, 0.55);"
+        >
+        </div>
+
+        <!-- Hero Section -->
+        <section
+            class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 pb-10 md:pb-20"
+        >
+            <h1
+                class="h1 underline mb-12 md:mb-16 text-4xl md:text-5xl lg:text-6xl"
+            >
+                À propos
+            </h1>
+
+            <!-- Section principale avec avatar et citation -->
+            <div
+                class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center justify-center mb-16 md:mb-20 max-w-6xl mx-auto"
+            >
+                <!-- Avatar SVG -->
+                <div class="flex-shrink-0">
+                    <img
+                        src="/src/assets/img/Juline.svg"
+                        alt="Avatar Juline"
+                        class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
+                    />
+                </div>
+
+                <!-- Citation -->
+                <div class="flex-1 text-center lg:text-left">
+                    <p
+                        class="text-lg md:text-xl lg:text-2xl font-medium leading-relaxed"
+                    >
+                        "Je conçois des expériences visuelles et digitales qui
+                        marient créativité, stratégie et émotions. Mon objectif
+                        : donner vie à des projets qui captent l'attention et
+                        racontent une histoire."
+                    </p>
+                </div>
+            </div>
+
+            <!-- Texte de présentation dans une card glassmorphism -->
+            <div class="max-w-5xl mx-auto mb-16 md:mb-20">
+                <div
+                    class="bg-white/10 backdrop-blur rounded-3xl p-6 md:p-8 lg:p-10 border border-white/20"
+                >
+                    <p class="text-sm md:text-base lg:text-lg leading-relaxed">
+                        Je suis étudiante en BUT Métiers du Multimédia et de
+                        l'Internet, une formation qui combine communication,
+                        design et développement web. La communication m'apporte
+                        une vision stratégique et la capacité de créer des
+                        contenus adaptés. Le design me permet d'exprimer ma
+                        créativité et de donner une identité visuelle aux
+                        projets. Le développement web m'offre la rigueur
+                        technique pour transformer des idées en sites
+                        fonctionnels. Ce mélange me donne une approche complète
+                        et polyvalente des projets digitaux.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Mes compétences -->
+            <div class="mb-16 md:mb-20 max-w-5xl mx-auto">
+                <h2
+                    class="h2 text-pink-300 mb-8 md:mb-12 text-center text-3xl md:text-4xl lg:text-5xl"
+                >
+                    Mes compétences
+                </h2>
+
+                <!-- Tags de compétences -->
+                <div
+                    class="flex flex-wrap justify-center gap-3 md:gap-4 mb-12 md:mb-16"
+                >
+                    <span
+                        class="border-3 border-indigo-300 rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium"
+                    >
+                        DESIGN GRAPHIQUE
+                    </span>
+                    <span
+                        class="border-3 border-indigo-300 rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium"
+                    >
+                        DÉVELOPPEMENT WEB
+                    </span>
+                    <span
+                        class="border-3 border-indigo-300 rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium"
+                    >
+                        AUDIOVISUEL
+                    </span>
+                    <span
+                        class="border-3 border-indigo-300 rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium"
+                    >
+                        STRATÉGIE DIGITALE
+                    </span>
+                </div>
+
+                <!-- Logos des outils -->
+                <div
+                    class="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-12"
+                >
+                    <!-- Figma -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/figma.webp"
+                            alt="Figma"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+
+                    <!-- Photoshop -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/photoshop.webp"
+                            alt="Photoshop"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+
+                    <!-- Illustrator -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/illustrator.webp"
+                            alt="Illustrator"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+
+                    <!-- Premiere Pro -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/premierepro.webp"
+                            alt="Premiere Pro"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+
+                    <!-- DaVinci Resolve -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/davinci.webp"
+                            alt="DaVinci Resolve"
+                            class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16"
+                        />
+                    </div>
+
+                    <!-- Visual Studio Code -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/vscode.webp"
+                            alt="VS Code"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+
+                    <!-- Notion -->
+                    <div
+                        class="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center border border-white/20"
+                    >
+                        <img
+                            src="/src/assets/img/notion.webp"
+                            alt="Notion"
+                            class="w-10 h-10 md:w-12 md:h-12 lg:w-14 lg:h-14"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bouton CV -->
+            <div class="text-center">
+                <a
+                    href="/src/assets/cv/CV_Juline_ADAM.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-3 bg-indigo-300 hover:bg-indigo-400 text-black px-6 md:px-8 py-3 rounded-full transition font-medium text-sm md:text-base"
+                >
+                    <svg
+                        class="w-5 h-5 md:w-6 md:h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                        ></path>
+                    </svg>
+                    Voir mon CV
+                </a>
+            </div>
+        </section>
+    </div>
+</Layout>
