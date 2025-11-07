@@ -1,0 +1,354 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+	<div class="min-h-screen text-white relative px-4 md:px-10 lg:px-20">
+		<!-- Fond noir pur avec dégradés radiaux plus visibles -->
+		<div class="fixed inset-0 -z-20 bg-black">
+			<div
+				class="absolute inset-0"
+				style="
+                background: 
+                    radial-gradient(circle at 15% 15%, rgba(162, 217, 228, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 85% 25%, rgba(106, 130, 230, 0.4) 0%, transparent 50%),
+                    radial-gradient(circle at 50% 50%, rgba(238, 132, 198, 0.3) 0%, transparent 45%),
+                    radial-gradient(circle at 25% 75%, rgba(106, 130, 230, 0.35) 0%, transparent 50%),
+                    radial-gradient(circle at 75% 80%, rgba(162, 217, 228, 0.3) 0%, transparent 45%);
+            "
+			>
+			</div>
+		</div>
+
+		<!-- Overlay sombre léger avec blur -->
+		<div
+			class="fixed inset-0 -z-10 backdrop-blur-md"
+			style="background-color: rgba(0, 0, 0, 0.55);"
+		>
+		</div>
+
+		<!-- Hero Section -->
+		<section
+			class="container mx-auto px-4 md:px-8 pt-32 md:pt-40 py-10 md:py-20 flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-0"
+		>
+			<div class="max-w-xl">
+				<img
+					class="w-10 md:w-12 h-auto"
+					src="/src/assets/img/im.svg"
+					alt="I'm en écriture manuscrite"
+				/>
+				<h1 class="titre text-5xl md:text-6xl lg:text-7xl">
+					Juline<br />
+					ADAM
+				</h1>
+				<p class="text-base md:text-lg mb-6 md:mb-8">
+					Créatrice d'expériences visuelles, je suis <span
+						id="rotating-text"
+						class="font-semibold"></span>
+				</p>
+				<div class="flex gap-3 md:gap-4">
+					<button
+						id="scrollToProjects"
+						class="bg-white/20 backdrop-blur hover:bg-white/30 px-4 md:px-6 py-2 md:py-3 rounded-lg transition text-sm md:text-base"
+					>
+						Mes projets
+					</button>
+					<a
+						href="/contact"
+						class="bg-white/20 backdrop-blur hover:bg-white/30 px-4 md:px-6 py-2 md:py-3 rounded-lg transition text-sm md:text-base"
+					>
+						Me contacter
+					</a>
+				</div>
+			</div>
+
+			<!-- Avatar -->
+			<div class="relative">
+				<img
+					src="/src/assets/img/Juline.svg"
+					alt="Avatar Juline ADAM"
+					class="h-56 md:h-64 lg:h-70 w-auto"
+				/>
+			</div>
+		</section>
+
+		<!-- Skills Marquee -->
+		<div
+			class="bg-black/30 backdrop-blur py-3 md:py-4 overflow-hidden -mx-4 md:-mx-10 lg:-mx-20"
+		>
+			<div
+				class="flex gap-6 md:gap-8 animate-marquee whitespace-nowrap text-sm md:text-base"
+			>
+				<span class="flex items-center gap-2">Charte graphique ✦</span>
+				<span class="flex items-center gap-2">Prototypage ✦</span>
+				<span class="flex items-center gap-2">Tests Utilisateurs ✦</span
+				>
+				<span class="flex items-center gap-2">Développement web ✦</span>
+				<span class="flex items-center gap-2">Design Graphique ✦</span>
+				<span class="flex items-center gap-2">Montage vidéo ✦</span>
+				<span class="flex items-center gap-2">Maquette (UX/UI) ✦</span>
+				<span class="flex items-center gap-2">Communication ✦</span>
+				<span class="flex items-center gap-2"
+					>Gestion de contenus ✦</span
+				>
+				<span class="flex items-center gap-2">Identité visuelle ✦</span>
+				<span class="flex items-center gap-2">Captation vidéo✦</span>
+				<span class="flex items-center gap-2">Branding ✦</span>
+			</div>
+		</div>
+
+		<!-- Projects Section -->
+		<section
+			id="projets"
+			class="container mx-auto px-4 md:px-8 py-12 md:py-20"
+		>
+			<h2
+				class="h2 mb-8 md:mb-12 underline underline-offset-8 text-3xl md:text-4xl lg:text-5xl"
+			>
+				Projets
+			</h2>
+
+			<!-- BDE MMI Project -->
+			<div
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
+			>
+				<div class="w-full lg:w-auto">
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						BDE MMI
+					</h3>
+					<img
+						src="/src/assets/img/card1.webp"
+						alt="BDE MMI"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover mb-4 md:mb-6"
+					/>
+				</div>
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
+						BDE (Bureau des étudiants), association étudiante qui
+						organise la vie étudiante d'une école ou université en
+						proposant des événements, activités et services pour
+						créer du lien entre les étudiants.
+					</p>
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>DESIGN</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>RÉDACTION</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>ÉVÉNEMENTIEL</span
+						>
+					</div>
+					<a
+						href="/bde"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
+					>
+						EN SAVOIR PLUS
+					</a>
+				</div>
+			</div>
+
+			<!-- 2BeBetter Project -->
+			<div
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6"
+			>
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
+						2BeBetter, une plateforme d'entraide solidaire et
+						sécurisée pour les personnes victimes de harcèlement
+						sous toutes ses formes.
+					</p>
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>DESIGN</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>COMMUNICATION</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>UX</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>UI</span
+						>
+					</div>
+					<a
+						href="/2bebetter"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
+					>
+						EN SAVOIR PLUS
+					</a>
+				</div>
+				<div
+					class="flex flex-col items-start lg:items-end w-full lg:w-auto"
+				>
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						2BeBetter
+					</h3>
+					<div class="flex gap-4 w-full lg:w-auto">
+						<img
+							src="/src/assets/img/card2.webp"
+							alt="2BeBetter"
+							class="w-full lg:w-auto h-auto lg:h-50 rounded-3xl object-cover"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- Festival L'Âge de Bière -->
+			<div
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 mb-6 md:mb-8 flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6"
+			>
+				<div class="w-full lg:w-auto">
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">
+						Festival L'Âge de Bière
+					</h3>
+					<img
+						src="/src/assets/img/card3.webp"
+						alt="Festival"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover mb-3 md:mb-4"
+					/>
+				</div>
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
+						Festival de l'Âge de Bière : événement festif à
+						Lachapelle-sous-Chaux qui associe concerts rock et
+						dégustations de bières artisanales, dans une ambiance
+						rock et musicale.
+					</p>
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>VIDÉO</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>MONTAGE</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>CAPTATION</span
+						>
+					</div>
+					<a
+						href="/age-de-biere"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
+					>
+						EN SAVOIR PLUS
+					</a>
+				</div>
+			</div>
+
+			<!-- MODULO Project -->
+			<div
+				class="bg-white/10 backdrop-blur rounded-3xl p-4 md:p-8 flex flex-col-reverse lg:flex-row justify-between items-start lg:items-center gap-6"
+			>
+				<div class="max-w-md w-full lg:w-auto">
+					<p class="mb-4 md:mb-6 text-sm md:text-base">
+						Modulo, une marque de meubles modulables et écologiques
+						pensée pour s'adapter à tous les espaces et aux besoins
+						de chacun, elle propose des solutions d'aménagement
+						pratiques, design et responsables.
+					</p>
+					<div class="flex flex-wrap gap-2 md:gap-3 mb-3 md:mb-4">
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>DESIGN</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>ANALYSE</span
+						>
+						<span
+							class="border-3 border-indigo-300 rounded-full px-3 md:px-4 py-1 text-xs md:text-sm"
+							>BRANDING</span
+						>
+					</div>
+					<a
+						href="/modulo"
+						class="text-black bg-indigo-300 hover:bg-indigo-400 px-4 md:px-6 py-2 rounded-full transition inline-block text-sm md:text-base"
+					>
+						EN SAVOIR PLUS
+					</a>
+				</div>
+				<div
+					class="flex flex-col items-start lg:items-end w-full lg:w-auto"
+				>
+					<h3 class="h3 mb-3 md:mb-4 text-2xl md:text-3xl">MODULO</h3>
+					<img
+						src="/src/assets/img/card4.webp"
+						alt="Modulo"
+						class="w-full lg:w-auto h-auto lg:h-50 rounded-2xl object-cover"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			// Animation texte rotatif
+			const words = [
+				"designeuse graphique",
+				"créative",
+				"passionnée",
+				"innovante",
+			];
+			let currentIndex = 0;
+			const textElement = document.getElementById("rotating-text");
+
+			function changeWord() {
+				if (textElement) {
+					textElement.style.opacity = "0";
+
+					setTimeout(() => {
+						currentIndex = (currentIndex + 1) % words.length;
+						textElement.textContent = words[currentIndex];
+						textElement.style.opacity = "1";
+					}, 300);
+				}
+			}
+
+			if (textElement) {
+				textElement.textContent = words[0];
+				textElement.style.transition = "opacity 0.3s ease";
+			}
+
+			setInterval(changeWord, 2000);
+
+			// Scroll animation pour le bouton "Mes projets"
+			const scrollButton = document.getElementById("scrollToProjects");
+			const projectsSection = document.getElementById("projets");
+
+			if (scrollButton && projectsSection) {
+				scrollButton.addEventListener("click", () => {
+					projectsSection.scrollIntoView({
+						behavior: "smooth",
+						block: "start",
+					});
+				});
+			}
+		</script>
+
+		<style>
+			@keyframes marquee {
+				0% {
+					transform: translateX(0);
+				}
+				100% {
+					transform: translateX(-50%);
+				}
+			}
+
+			.animate-marquee {
+				animation: marquee 20s linear infinite;
+			}
+		</style>
+	</div>
+</Layout>
